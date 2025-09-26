@@ -291,6 +291,31 @@
       \verb https://reservarecursos.utp.edu.pe/ref-acad
       \endverb
     \endentry
+    \entry{zoom:reports}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4252b72e6ebcd4d4b4c2e46a786f03d2}{%
+           family={Zoom},
+           familyi={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{4252b72e6ebcd4d4b4c2e46a786f03d2}
+      \strng{fullhash}{4252b72e6ebcd4d4b4c2e46a786f03d2}
+      \strng{bibnamehash}{4252b72e6ebcd4d4b4c2e46a786f03d2}
+      \strng{authorbibnamehash}{4252b72e6ebcd4d4b4c2e46a786f03d2}
+      \strng{authornamehash}{4252b72e6ebcd4d4b4c2e46a786f03d2}
+      \strng{authorfullhash}{4252b72e6ebcd4d4b4c2e46a786f03d2}
+      \field{labelalpha}{Zoo}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Informes}
+      \verb{urlraw}
+      \verb https://zoom.us/account/report?isPersonal=true#/usageReports
+      \endverb
+      \verb{url}
+      \verb https://zoom.us/account/report?isPersonal=true#/usageReports
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

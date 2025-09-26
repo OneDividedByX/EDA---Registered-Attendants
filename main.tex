@@ -542,6 +542,13 @@
     
                 Estos inconvenientes pueden ser fácilmente resueltos accediendo al historial de reuniones de \textit{Zoom}, ya que las sesiones virtuales se realizan en esta plataforma. Aquí es posible extraer los datos en múltiples archivos de formato $\mathsf{.csv}$ donde cada archivo contiene los datos de las sesiones en relación a un mes específico y además cierto tipo de información de la sesión.
                 
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=0.8\textwidth]{Sources/zoomReport.png}
+                    \caption{Fuente de extracción de los datos (apartado de reportes en \textit{Zoom}) \cite{zoom:reports}.}
+                    \label{fig:zoomReport}
+                \end{figure}
+
                 Específicamente, para cada mes se tienen dos archivos $\mathsf{.csv}$, donde cada uno contiene su respectiva tabla:
                 \begin{enumerate}\label{raw tables dict}
                     \item \textit{registrationMeetings}, que contiene los datos generales de la sesiones programadas (datos previos);
@@ -833,7 +840,7 @@
                     \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
                 \end{itemize}
                 El motivo de agrupar en intervalos de $8\,\textup{min}$ es porque si buscaramos partir en $9$ subintervalos los intervalos $[0;45]$ y $[0;90]$, los intervalos tendrían longitud $5\,\textup{min}$ y $10\,\textup{min}$ respectivamente, por lo que para evitar el tener que utilizar intervalos de longitud diferentes se toman intervalos que resulten del promedio aproximado de los mismos que es $7.5\,\textup{min}\approx8\,\textup{min}$.
-                
+
                 En el comportamiento global de esta variable podría no ser apreciable algún comportamiento en particular.
                 \begin{figure}[H]
                     \centering
