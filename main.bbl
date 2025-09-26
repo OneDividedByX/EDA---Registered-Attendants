@@ -1,0 +1,297 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{JMLR:v17:14-296}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f536a5b1bc63890da21d6091897b1cad}{%
+           family={Arlot},
+           familyi={A\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7c93387f639cd7501ce9103ec56dc2d9}{%
+           family={Lerasle},
+           familyi={L\bibinitperiod},
+           given={Matthieu},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a3c7cbb7dbd50dbbdc41fe71092a8c3}
+      \strng{fullhash}{6a3c7cbb7dbd50dbbdc41fe71092a8c3}
+      \strng{bibnamehash}{6a3c7cbb7dbd50dbbdc41fe71092a8c3}
+      \strng{authorbibnamehash}{6a3c7cbb7dbd50dbbdc41fe71092a8c3}
+      \strng{authornamehash}{6a3c7cbb7dbd50dbbdc41fe71092a8c3}
+      \strng{authorfullhash}{6a3c7cbb7dbd50dbbdc41fe71092a8c3}
+      \field{labelalpha}{AL16}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{number}{208}
+      \field{title}{Choice of V for V-Fold Cross-Validation in Least-Squares Density Estimation}
+      \field{volume}{17}
+      \field{year}{2016}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 50}
+      \range{pages}{50}
+      \verb{urlraw}
+      \verb http://jmlr.org/papers/v17/14-296.html
+      \endverb
+      \verb{url}
+      \verb http://jmlr.org/papers/v17/14-296.html
+      \endverb
+    \endentry
+    \entry{Makela}{book}{}
+      \name{author}{3}{}{%
+        {{hash=ae64b8d3ed78516850991c1b81d1da26}{%
+           family={Bagirov},
+           familyi={B\bibinitperiod},
+           given={Adil},
+           giveni={A\bibinitperiod}}}%
+        {{hash=820a4753be71f6b59f4848bf6bb6ad73}{%
+           family={Karmitsa},
+           familyi={K\bibinitperiod},
+           given={Napsu},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2c7795650439cfaa298a26ea5f09a7ca}{%
+           family={Mkel},
+           familyi={M\bibinitperiod},
+           given={Marko\bibnamedelima M.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Publishing Company, Incorporated}%
+      }
+      \strng{namehash}{6deac750a07b3d6ac67c34efefb16262}
+      \strng{fullhash}{6deac750a07b3d6ac67c34efefb16262}
+      \strng{bibnamehash}{6deac750a07b3d6ac67c34efefb16262}
+      \strng{authorbibnamehash}{6deac750a07b3d6ac67c34efefb16262}
+      \strng{authornamehash}{6deac750a07b3d6ac67c34efefb16262}
+      \strng{authorfullhash}{6deac750a07b3d6ac67c34efefb16262}
+      \field{labelalpha}{BKM14}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to Nonsmooth Optimization: Theory, Practice and Software}
+      \field{year}{2014}
+      \true{nocite}
+    \endentry
+    \entry{gall2022measure}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8b5738158dea96c4dfe79784a76ffe97}{%
+           family={Gall},
+           familyi={G\bibinitperiod},
+           given={J.F.L.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{8b5738158dea96c4dfe79784a76ffe97}
+      \strng{fullhash}{8b5738158dea96c4dfe79784a76ffe97}
+      \strng{bibnamehash}{8b5738158dea96c4dfe79784a76ffe97}
+      \strng{authorbibnamehash}{8b5738158dea96c4dfe79784a76ffe97}
+      \strng{authornamehash}{8b5738158dea96c4dfe79784a76ffe97}
+      \strng{authorfullhash}{8b5738158dea96c4dfe79784a76ffe97}
+      \field{labelalpha}{Gal22}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783031142055}
+      \field{series}{Graduate Texts in Mathematics}
+      \field{title}{Measure Theory, Probability, and Stochastic Processes}
+      \field{year}{2022}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://books.google.com.pe/books?id=Ba2YEAAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.pe/books?id=Ba2YEAAAQBAJ
+      \endverb
+    \endentry
+    \entry{klenke2013probability}{book}{}
+      \name{author}{1}{}{%
+        {{hash=220022b4c621abdd4606a3e9b81a21df}{%
+           family={Klenke},
+           familyi={K\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer London}%
+      }
+      \strng{namehash}{220022b4c621abdd4606a3e9b81a21df}
+      \strng{fullhash}{220022b4c621abdd4606a3e9b81a21df}
+      \strng{bibnamehash}{220022b4c621abdd4606a3e9b81a21df}
+      \strng{authorbibnamehash}{220022b4c621abdd4606a3e9b81a21df}
+      \strng{authornamehash}{220022b4c621abdd4606a3e9b81a21df}
+      \strng{authorfullhash}{220022b4c621abdd4606a3e9b81a21df}
+      \field{labelalpha}{Kle13}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781447153603}
+      \field{series}{Universitext}
+      \field{title}{Probability Theory: A Comprehensive Course}
+      \field{year}{2013}
+      \true{nocite}
+    \endentry
+    \entry{lima1998algebra}{book}{}
+      \name{author}{1}{}{%
+        {{hash=102ba024e856dcd08bb3bcabda3a4fcc}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={E.L.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Instituto de Matemática y Ciencias Afines, UNI}%
+      }
+      \strng{namehash}{102ba024e856dcd08bb3bcabda3a4fcc}
+      \strng{fullhash}{102ba024e856dcd08bb3bcabda3a4fcc}
+      \strng{bibnamehash}{102ba024e856dcd08bb3bcabda3a4fcc}
+      \strng{authorbibnamehash}{102ba024e856dcd08bb3bcabda3a4fcc}
+      \strng{authornamehash}{102ba024e856dcd08bb3bcabda3a4fcc}
+      \strng{authorfullhash}{102ba024e856dcd08bb3bcabda3a4fcc}
+      \field{labelalpha}{Lim98}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Colección textos del IMCA}
+      \field{title}{Algebra Lineal}
+      \field{year}{1998}
+      \true{nocite}
+    \endentry
+    \entry{cpita:1995}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c96751d6dbc3d8617d0aee6e7e8d0c2d}{%
+           family={Ruiz},
+           familyi={R\bibinitperiod},
+           given={C.P.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall Hispanoamericana, S.A.}%
+      }
+      \strng{namehash}{c96751d6dbc3d8617d0aee6e7e8d0c2d}
+      \strng{fullhash}{c96751d6dbc3d8617d0aee6e7e8d0c2d}
+      \strng{bibnamehash}{c96751d6dbc3d8617d0aee6e7e8d0c2d}
+      \strng{authorbibnamehash}{c96751d6dbc3d8617d0aee6e7e8d0c2d}
+      \strng{authornamehash}{c96751d6dbc3d8617d0aee6e7e8d0c2d}
+      \strng{authorfullhash}{c96751d6dbc3d8617d0aee6e7e8d0c2d}
+      \field{labelalpha}{Rui95}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9789688805299}
+      \field{title}{Cálculo vectorial}
+      \field{year}{1995}
+      \true{nocite}
+    \endentry
+    \entry{rvm:UoT}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3d28ae8ceba179ba51a46bbda6aa26b1}{%
+           family={Toronto},
+           familyi={T\bibinitperiod},
+           given={University},
+           giveni={U\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d28ae8ceba179ba51a46bbda6aa26b1}
+      \strng{fullhash}{3d28ae8ceba179ba51a46bbda6aa26b1}
+      \strng{bibnamehash}{3d28ae8ceba179ba51a46bbda6aa26b1}
+      \strng{authorbibnamehash}{3d28ae8ceba179ba51a46bbda6aa26b1}
+      \strng{authornamehash}{3d28ae8ceba179ba51a46bbda6aa26b1}
+      \strng{authorfullhash}{3d28ae8ceba179ba51a46bbda6aa26b1}
+      \field{labelalpha}{Tor}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Random Vectors and Matrices}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.utstat.toronto.edu/~brunner/oldclass/appliedf11/handouts/2101f11RandomVectorsMVN.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.utstat.toronto.edu/~brunner/oldclass/appliedf11/handouts/2101f11RandomVectorsMVN.pdf
+      \endverb
+    \endentry
+    \entry{Cuhk}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=88183b946cc5f0e8c96b2e66e1c74a7e}{%
+           family={Unknown},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{fullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{bibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorbibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authornamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorfullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \field{labelalpha}{Unk}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Subgradient of Convex Function}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.math.cuhk.edu.hk/course_builder/1920/math4230/Note8.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.math.cuhk.edu.hk/course_builder/1920/math4230/Note8.pdf
+      \endverb
+    \endentry
+    \entry{utp:reservas}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4cdc939ad7b83a6cf75ed24964535a93}{%
+           family={UTP},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{4cdc939ad7b83a6cf75ed24964535a93}
+      \strng{fullhash}{4cdc939ad7b83a6cf75ed24964535a93}
+      \strng{bibnamehash}{4cdc939ad7b83a6cf75ed24964535a93}
+      \strng{authorbibnamehash}{4cdc939ad7b83a6cf75ed24964535a93}
+      \strng{authornamehash}{4cdc939ad7b83a6cf75ed24964535a93}
+      \strng{authorfullhash}{4cdc939ad7b83a6cf75ed24964535a93}
+      \field{labelalpha}{UTP}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{UTP Reservas}
+      \verb{urlraw}
+      \verb https://reservarecursos.utp.edu.pe/ref-acad
+      \endverb
+      \verb{url}
+      \verb https://reservarecursos.utp.edu.pe/ref-acad
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

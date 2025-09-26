@@ -1,0 +1,77 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Resumen}{3}{chapter*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introducción}{5}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Antecedentes}{7}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Objetivos}{9}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Generales}{9}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Específicos}{9}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Trabajo realizado}{11}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Modelo matemático}{11}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Estimaciones}{13}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Métricas estadísticas}{16}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}\textit {ETL} (Extracción-Transformación-Carga)}{16}{section.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.1}Extracción}{16}{subsection.4.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.2}Transformación}{17}{subsection.4.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.3}Carga}{18}{subsection.4.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}EDA (Análisis Exploratorio de los Datos)}{19}{section.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.1}Tipo de sesión}{19}{subsection.4.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.2}Cursos dictados}{21}{subsection.4.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.3}Alumnos inscritos}{24}{subsection.4.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.4}Alumnos participantes}{25}{subsection.4.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.5}Inscritos-Participantes}{26}{subsection.4.5.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.6}Duración de sesiones}{28}{subsection.4.5.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.7}Puntualidad}{31}{subsection.4.5.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Resultados}{35}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Por curso}{36}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}Matemática I}{36}{subsection.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.2}Matemática II}{36}{subsection.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.3}Cálculo I}{36}{subsection.5.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.4}Cálculo II}{36}{subsection.5.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.5}Estadística Descriptiva}{36}{subsection.5.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.6}Geometría}{36}{subsection.5.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Por tipo}{36}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}Talleres}{36}{subsection.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}Tutorías}{36}{subsection.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Por fecha y hora}{36}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Discusión}{37}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Conclusiones}{39}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Anexos}{41}{chapter.8}%
