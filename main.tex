@@ -320,7 +320,7 @@
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \chapter*{Resumen}\addcontentsline{toc}{chapter}{Resumen}
-    
+        El contenido principal del informe se centra en realizar un análisis exploratorio de los datos obtenidos a partir de las sesiones de talleres y tutorías dictadas a los estudiantes de la Universidad Tecnológica del Perú, con el fin de determinar si existen variables aleatorias que modelen el comportamiento estadístico de los datos. Se presenta el esquema matemático del modelo y los resultados experimentales obtenidos a partir de los datos usando \textsc{Power BI}, \textsc{PowerQuery} y \textsc{Python}.
     \chapter{Introducción}
         El presente informe corresponde a las Prácticas Pre-Profesionales realizadas en la
         Universidad Tecnológica del Perú (UTP), desde el 3 de marzo de 2025 hasta el 2 de agosto de 2025.
@@ -534,43 +534,6 @@
             \end{itemize}
             respectivamente. Además, cuando el tamaño $n$ de los datos es suficientemente grande la diferencia entre la media poblacional y muestral se hace ínfima, por lo que en tales casos la elección del estimador es indistinta.
         
-        \section{Métricas estadísticas}
-            \begin{definicion}[Contraste de hipótesis]
-                Es un método estadístico que permite decidir si un conjunto de datos provee de suficiente evidencia para rechazar o no una hipótesis. La hipótesis puede ser de dos tipos: hipótesis nula ($H_0$) e hipótesis alternativa ($H_1$). La hipótesis nula es la que se aceptará o rechazará según algún tipo de test estadístico.
-            \end{definicion}
-            \begin{ejemplo}[Contraste de la proporción (dos colas)]
-               Sean las hipótesis:
-                \[
-                H_{0} : p = p_{0},
-                \quad
-                H_{1} : p \neq p_{0},
-                \]
-                donde \(p\) es la probabilidad de éxito y \(q = 1-p\) es la probabilidad de fracaso y $p_{0}$ es el valor supuesto para la probabilidad de éxito en la hipótesis nula.
-
-                Para un nivel de significación \(\alpha\), es necesario determinar el valor del cuantil \(z_{\alpha/2}\) de una distribución normal estándar. Para la proporción muestral, el estadístico de contraste viene dado por:
-                \[
-                z_{c} = \frac{\hat{p} - p_{0}}{\sqrt{\frac{p_{0}\cdot q_{0}}{n}}} ,
-                \]
-                donde \(\hat{p}\) es la proporción muestral, \(q_{0} = 1-p_{0}\) y \(n\) el tamaño de la muestra.
-
-                Luego, 
-                \begin{itemize}
-                    \item Si \(\abs{z_{c}} > z_{\alpha/2}\), se rechaza $H_{0}$.
-                    \item Si \(\abs{z_{c}} \leq z_{\alpha/2}\), no se rechaza (o se acepta que se tiene suficiente evidencia) $H_{0}$.
-                \end{itemize}
-            \end{ejemplo}
-            \begin{definicion}[Kurtosis]
-                
-            \end{definicion}
-            \begin{definicion}[Exceso de kurtosis]
-                
-            \end{definicion}
-            \begin{definicion}[Coeficiente de correlación (Pearson)]
-                
-            \end{definicion}
-            \begin{definicion}[Matriz de correlación]
-                
-            \end{definicion}
         \section{\textit{ETL} (Extracción-Transformación-Carga)}
             \subsection{Extracción}
                 Para concretar el análisis es necesario conocer los elementos de $\mathcal{S}$ (sesiones), es decir, contar con el conjunto de datos de interés. Por ello es necesario realizar la extracción de los datos.
@@ -588,7 +551,19 @@
                 Se aclara que en los datos de una sesión programada es imposible conocer el número de asistentes, sin embargo en los datos de actividad de las sesiones programadas sí (pues ya sucedió un número de asistentes).
     
                 Entonces, si bien no contamos directamente con un único archivo para agrupar la totalidad los datos, mediante un proceso de transformación de los mismos es posible hacerlo. Por ello nos es suficiente contar con los archivos $\mathsf{.csv}$ extraídos.
-
+                
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=1\textwidth]{Sources/registrationMeetings_Head.png}
+                    \caption{Primeras filas de \textit{registrationMeetings}}
+                    \label{fig:registrationMeetings_head}
+                \end{figure}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=1\textwidth]{Sources/usermeetings_Head.png}
+                    \caption{Primeras filas de \textit{usermeeting}}
+                    \label{fig:usermeetings_head}
+                \end{figure}
             \subsection{Transformación}
                 Hasta este punto se cuenta con dos tipos de tablas: \textit{registrationMeetings} y \textit{usermeeting}. Sin embargo, necesitamos agrupar los datos previos y posteriores para cada sesión existente. Para ello podemos recurrir a cualquier \textit{software} (\textsc{Power BI}, \textsc{PowerQuery}) o lenguaje de programación (\textsc{Python}) que incorpore la operación \textbf{LEFT JOIN}.
                 Esto será posible porque \textit{registrationMeetings} y \textit{usermeeting} cuentan con una columna que contiene el identificador único para cada sesión (\textit{ID} de \textit{Zoom}). Llamaremos a la tabla resultante como \textit{Meetings}.
@@ -610,11 +585,21 @@
                     \item Eliminar las filas con \textit{ID} repetido.
                 \end{enumerate}
                 La tabla obtenida de \textit{Meetings} posterior a la limpieza se llamará \textit{MeetingsClean} y esta servirá de base para realizar las transformaciones que sean necesarias.
-                
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=1\textwidth]{Sources/MeetingsClean_Head.png}
+                    \caption{Primeras filas de \textit{MeetingsClean}}
+                    \label{fig:meetingsclean_head}
+                \end{figure}
                 Hasta este punto, para obtener los datos (y por tanto los elementos de $\mathcal{S}$) necesarios para el análisis es requerido realizar algunas transformaciones sobre las columnas de \textit{MeetingsClean} sujetas principalmente a separación de caracteres en columnas que contienen texto.
 
                 Finalmente, la tabla resultante de aplicar las transformaciones a las columnas de \textit{MeetingsClean} se llamará \textit{MeetingsCleanInfo}.
-                
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=1\textwidth]{Sources/MeetingsCleanInfo_Head.png}
+                    \caption{Primeras filas y columnas de \textit{MeetingsCleanInfo}}
+                    \label{fig:meetingscleaninfo_head}
+                \end{figure}
             \subsection{Carga}
                 Dada la poca complejidad y el poco tamaño de los datos, esta etapa consiste únicamente en la elaboración de gráficos y/o visualizaciones con \textsc{Power BI} a partir de las tablas obtenidas, principalmente \textit{MeetingsCleanInfo}.
         \section{EDA (Análisis Exploratorio de los Datos)}
@@ -899,90 +884,143 @@
     \chapter{Discusión}
         
     \chapter{Conclusiones}
-        
+        \begin{enumerate}
+            \item La distribución de la duración de las sesiones es muy diferente en talleres y tutorías.
+            \item La distribución de la puntualidad de las sesiones es muy diferente en talleres y tutorías.
+            \item La distribución de la cantidad de inscritos es muy diferente en talleres y tutorías.
+            \item El número de asistentes presenta una correlación lineal positiva fuerte con el número de inscritos.
+        \end{enumerate}
     \chapter{Anexos}
-    \begin{definicion}[Función indicatriz]
-        Sea $A$ un subconjunto de un conjunto $X$, definimos la función indicatriz de $A$ sobre $X$ como $\mathds{1}_A:X\longrightarrow\{0,1\}$ con
-        \begin{equation*}
-            \mathds{1}_A (x)=\left\{\begin{array}{cl}
-                 1&,\enspace x\in A  \\
-                 0&,\enspace x \in A^\setcomplement
-            \end{array}\right.
-        \end{equation*}
-    \end{definicion}
-    \begin{definicion}[Probabilidad condicional]
-        Sean $A$ y $B$ eventos de un espacio de probabilidad $(\Omega,\mathcal{F},\Probsymb)$. La probabilidad de $A$ dado $B$ se define como
-        \begin{equation}
-            \Probsymb(A \mid B) :=\dfrac{\Probsymb(A\cap B)}{\Probsymb(B)}
-        \end{equation}
-    \end{definicion}
-    \begin{definicion}[Partición]
-        Decimos que los $A_{1}, A_{2}, \dots, A_{n}\subset A$ forman una partición de $A$ si los $A_i$ son exhaustivos y mutuamente excluyentes.
-    \end{definicion}
-    \begin{definicion}[Partición de un espacio de probabilidad]
-        Decimos que los $A_{1}, A_{2}, \dots, A_{n}\subset A$ forman una partición de un espacio de probabilidad $(\Omega,\mathcal{F},\Probsymb)$ si $A_i\in\mathcal{F},\enspace i =1,\ldots,n$ y forman una partición de $\Omega$.
-    \end{definicion}
-    \begin{teorema}[Bayes]\label{T. bayes}
-        Sea $A_{1}, A_{2}, \dots, A_{n}$ una partición del espacio de probabilidad $(\Omega,\mathcal{F},\Probsymb)$ tales que $\Probsymb(A_i) > 0,\enspace i=1,\ldots,n$. Sea $B$ un evento arbitrario de $(\Omega,\mathcal{F},\Probsymb)$, entonces
-        \begin{equation}
-            \Probsymb(A_i \mid B) = \frac{\Probsymb(B \mid A_i)\, \Probsymb(A_i)}{\Probsymb(B)}
-        \end{equation}
-    \end{teorema}
-    \begin{teorema}[Probabilidad total]
-        Bajo las mismas condiciones del Teorema \ref{T. bayes},
-        \begin{equation}
-            \Probsymb(B) = \sum_{i=1}^n \Probsymb(B \mid A_i)\Probsymb(A_i)
-        \end{equation}
-        Además se obtiene la \textbf{fórmula de Bayes}
-        \begin{equation}
-            \Probsymb(A_i \mid B) = \frac{\Probsymb(B \mid A_i)\, \Probsymb(A_i)}{\sum_{i=1}^n \Probsymb(B \mid A_i)\Probsymb(A_i)}
-        \end{equation}
-    \end{teorema}
-    \begin{definicion}[Distribución normal]
-        Una variable aleatoria \(X\) es normalmente distribuida con media \(\mu\) y varianza \(\sigma^{2}\) si su densidad es 
-        \begin{equation}
-            f(x) = \frac{1}{\sqrt{2\pi\sigma^{2}}}\exp{-\frac{(x-\mu)^{2}}{2\sigma^{2}}}
-        \end{equation}
-        y en tal caso denotamos \(X \sim \mathcal{N}(\mu,\sigma^{2})\). Además, si $\mu=0$ y $\sigma=1$ se dice que \(X\) es normalmente distribuida.
-    \end{definicion}
-    \begin{teorema}[Ley débil de los grandes números]\label{large numbers weak}
-        Sea  $X_{1}, X_{2}, X_{3}, \dots$ una sucesión de variables aleatorias independientes e idénticamente distribuidas con valor esperado 
-        \(\mu\) y varianza \(\sigma^{2}\), entonces el promedio
-        \[
-        \overline{X}_{n} = \frac{X_{1} + \cdots + X_{n}}{n}
-        = \frac{1}{n} \sum_{i=1}^{n} X_{i}
-        \]
-        converge en probabilidad a \(\mu\). En otras palabras, para cualquier 
-        \(\varepsilon>0\) se cumple que
-        \[
-        \lim_{n \to \infty} \, P\!\left( \left|\overline{X}_{n} - \mu \right| < \varepsilon \right) = 1.
-        \]
-    \end{teorema}
-    \begin{teorema}[Ley fuerte de los grandes números]\label{large numbers strong}
-        Sea  $X_{1}, X_{2}, X_{3}, \dots$ una sucesión de variables aleatorias independientes e idénticamente distribuidas que cumplen 
-        \(\EV{X_{i}}< \infty\) y tienen valor esperado 
-        \(\EV{X_{i}}= \mu\), entonces
-        \begin{equation*}
-            \Prob{ \lim_{n \to \infty} \overline{X}_{n} = \mu}= 1,
-        \end{equation*}
-        es decir, el promedio de las variables aleatorias converge a \(\mu\) casi seguramente. 
-    \end{teorema}
+        \begin{definicion}[Función indicatriz]
+            Sea $A$ un subconjunto de un conjunto $X$, definimos la función indicatriz de $A$ sobre $X$ como $\mathds{1}_A:X\longrightarrow\{0,1\}$ con
+            \begin{equation*}
+                \mathds{1}_A (x)=\left\{\begin{array}{cl}
+                    1&,\enspace x\in A  \\
+                    0&,\enspace x \in A^\setcomplement
+                \end{array}\right.
+            \end{equation*}
+        \end{definicion}
+        \section{Probabilidad}
+            \begin{definicion}[Probabilidad condicional]
+                Sean $A$ y $B$ eventos de un espacio de probabilidad $(\Omega,\mathcal{F},\Probsymb)$. La probabilidad de $A$ dado $B$ se define como
+                \begin{equation}
+                    \Probsymb(A \mid B) :=\dfrac{\Probsymb(A\cap B)}{\Probsymb(B)}
+                \end{equation}
+            \end{definicion}
+            \begin{definicion}[Partición]
+                Decimos que los $A_{1}, A_{2}, \dots, A_{n}\subset A$ forman una partición de $A$ si los $A_i$ son exhaustivos y mutuamente excluyentes.
+            \end{definicion}
+            \begin{definicion}[Partición de un espacio de probabilidad]
+                Decimos que los $A_{1}, A_{2}, \dots, A_{n}\subset A$ forman una partición de un espacio de probabilidad $(\Omega,\mathcal{F},\Probsymb)$ si $A_i\in\mathcal{F},\enspace i =1,\ldots,n$ y forman una partición de $\Omega$.
+            \end{definicion}
+            \begin{teorema}[Bayes]\label{T. bayes}
+                Sea $A_{1}, A_{2}, \dots, A_{n}$ una partición del espacio de probabilidad $(\Omega,\mathcal{F},\Probsymb)$ tales que $\Probsymb(A_i) > 0,\enspace i=1,\ldots,n$. Sea $B$ un evento arbitrario de $(\Omega,\mathcal{F},\Probsymb)$, entonces
+                \begin{equation}
+                    \Probsymb(A_i \mid B) = \frac{\Probsymb(B \mid A_i)\, \Probsymb(A_i)}{\Probsymb(B)}
+                \end{equation}
+            \end{teorema}
+            \begin{teorema}[Probabilidad total]
+                Bajo las mismas condiciones del Teorema \ref{T. bayes},
+                \begin{equation}
+                    \Probsymb(B) = \sum_{i=1}^n \Probsymb(B \mid A_i)\Probsymb(A_i)
+                \end{equation}
+                Además se obtiene la \textbf{fórmula de Bayes}
+                \begin{equation}
+                    \Probsymb(A_i \mid B) = \frac{\Probsymb(B \mid A_i)\, \Probsymb(A_i)}{\sum_{i=1}^n \Probsymb(B \mid A_i)\Probsymb(A_i)}
+                \end{equation}
+            \end{teorema}
+            \begin{definicion}[Distribución normal]
+                Una variable aleatoria \(X\) es normalmente distribuida con media \(\mu\) y varianza \(\sigma^{2}\) si su densidad es 
+                \begin{equation}
+                    f(x) = \frac{1}{\sqrt{2\pi\sigma^{2}}}\exp{-\frac{(x-\mu)^{2}}{2\sigma^{2}}}
+                \end{equation}
+                y en tal caso denotamos \(X \sim \mathcal{N}(\mu,\sigma^{2})\). Además, si $\mu=0$ y $\sigma=1$ se dice que \(X\) es normalmente distribuida.
+            \end{definicion}
+            \begin{teorema}[Ley débil de los grandes números]\label{large numbers weak}
+                Sea  $X_{1}, X_{2}, X_{3}, \dots$ una sucesión de variables aleatorias independientes e idénticamente distribuidas con valor esperado 
+                \(\mu\) y varianza \(\sigma^{2}\), entonces el promedio
+                \[
+                \overline{X}_{n} = \frac{X_{1} + \cdots + X_{n}}{n}
+                = \frac{1}{n} \sum_{i=1}^{n} X_{i}
+                \]
+                converge en probabilidad a \(\mu\). En otras palabras, para cualquier 
+                \(\varepsilon>0\) se cumple que
+                \[
+                \lim_{n \to \infty} \, P\!\left( \left|\overline{X}_{n} - \mu \right| < \varepsilon \right) = 1.
+                \]
+            \end{teorema}
+            \begin{teorema}[Ley fuerte de los grandes números]\label{large numbers strong}
+                Sea  $X_{1}, X_{2}, X_{3}, \dots$ una sucesión de variables aleatorias independientes e idénticamente distribuidas que cumplen 
+                \(\EV{X_{i}}< \infty\) y tienen valor esperado 
+                \(\EV{X_{i}}= \mu\), entonces
+                \begin{equation*}
+                    \Prob{ \lim_{n \to \infty} \overline{X}_{n} = \mu}= 1,
+                \end{equation*}
+                es decir, el promedio de las variables aleatorias converge a \(\mu\) casi seguramente. 
+            \end{teorema}
 
-    \begin{definicion}[Estimador (estadístico)]
-        Es una función generada a partir de los datos de una muestra que se usa para estimar algún parámetro desconocido de la población. Cuando el estimador toma un valor en particular en base a los datos de una muestra, se llama \textbf{estimador puntual}.
-    \end{definicion}
+        \section{Métricas estadísticas}
+            \begin{definicion}[Estimador (estadístico)]
+                Es una función generada a partir de los datos de una muestra que se usa para estimar algún parámetro desconocido de la población. Cuando el estimador toma un valor en particular en base a los datos de una muestra, se llama \textbf{estimador puntual}.
+            \end{definicion}
 
-    \begin{definicion}[Sesgo de un estimador]
-        Sea $\hat{\theta}$ un estimador de un parámetro $\theta$. Entonces el sesgo o \textit{bias} de $\hat{\theta}$ se define como
-        \begin{equation*}
-            B(\hat{\theta}) = \EV{\hat{\theta}} - \theta
-        \end{equation*}
-        Si $B(\hat{\theta}) = 0$, entonces $\hat{\theta}$ decimos que es un \textbf{estimador insesgado}.
-    \end{definicion}
+            \begin{definicion}[Sesgo de un estimador]
+                Sea $\hat{\theta}$ un estimador de un parámetro $\theta$. Entonces el sesgo o \textit{bias} de $\hat{\theta}$ se define como
+                \begin{equation*}
+                    B(\hat{\theta}) = \EV{\hat{\theta}} - \theta
+                \end{equation*}
+                Si $B(\hat{\theta}) = 0$, entonces $\hat{\theta}$ decimos que es un \textbf{estimador insesgado}.
+            \end{definicion}
 
-    \begin{definicion}[Coeficiente de correlación]
-        .
-    \end{definicion}
+            \begin{definicion}[Consistencia de un estimador]
+                Sea $\hat{\theta}_n$ un estimador de un parámetro $\theta$ determinado por una muestra de tamaño $n$. Decimos que $\hat{\theta}_n$ es consistente si
+                \begin{equation*}
+                    \lim_{n \to \infty} \Prob{\hat{\theta}_n = \theta} = 1
+                \end{equation*}
+            \end{definicion}
 
+            \begin{definicion}[Contraste de hipótesis]
+                Es un método estadístico que permite decidir si un conjunto de datos provee de suficiente evidencia para rechazar o no una hipótesis. La hipótesis puede ser de dos tipos: hipótesis nula ($H_0$) e hipótesis alternativa ($H_1$). La hipótesis nula es la que se aceptará o rechazará según algún tipo de test estadístico.
+            \end{definicion}
+            \begin{ejemplo}[Contraste de la proporción (dos colas)]
+               Sean las hipótesis:
+                \[
+                H_{0} : p = p_{0},
+                \quad
+                H_{1} : p \neq p_{0},
+                \]
+                donde \(p\) es la probabilidad de éxito y \(q = 1-p\) es la probabilidad de fracaso y $p_{0}$ es el valor supuesto para la probabilidad de éxito en la hipótesis nula.
+
+                Para un nivel de significación \(\alpha\), es necesario determinar el valor del cuantil \(z_{\alpha/2}\) de una distribución normal estándar. Para la proporción muestral, el estadístico de contraste viene dado por:
+                \[
+                z_{c} = \frac{\hat{p} - p_{0}}{\sqrt{\frac{p_{0}\cdot q_{0}}{n}}} ,
+                \]
+                donde \(\hat{p}\) es la proporción muestral, \(q_{0} = 1-p_{0}\) y \(n\) el tamaño de la muestra.
+
+                Luego, 
+                \begin{itemize}
+                    \item Si \(\abs{z_{c}} > z_{\alpha/2}\), se rechaza $H_{0}$.
+                    \item Si \(\abs{z_{c}} \leq z_{\alpha/2}\), no se rechaza (o se acepta que se tiene suficiente evidencia) $H_{0}$.
+                \end{itemize}
+            \end{ejemplo}
+            \begin{definicion}[Kurtosis]
+                Sea $X$ una variable aleatoria con media $\mu$ y varianza $\sigma^2$. La \textbf{kurtosis} de $X$ se define como
+                \begin{equation*}
+                    \kappa(X) := \EV{\frac{(X-\mu)^4}{\sigma^4}}=\frac{\EV{(X-\mu)^4}}{\EV{(X-\mu)^2}^2}
+                \end{equation*}
+                Además, el exceso de kurtosis de $X$ se define como $\kappa_e(X) = \kappa(X)-3$.
+            \end{definicion}
+            \begin{definicion}[Coeficiente de correlación (Pearson)]
+                Sea $X$ y $Y$ dos variables aleatorias. Entonces el coeficiente de correlación de Pearson entre $X$ y $Y$ se define como
+                \begin{equation*}
+                    \rho(X,Y) := \frac{\EV{XY}-\EV{X}\EV{Y}}{\sqrt{\EV{X^2}-\EV{X}^2}\sqrt{\EV{Y^2}-\EV{Y}^2}}
+                \end{equation*}
+            \end{definicion}
+            \begin{definicion}[Matriz de correlación (Pearson)]
+                Sea $X_1, X_2, \dots, X_n$ una sucesión de variables aleatorias, la matriz de correlación (Pearson) de $X_1, X_2, \dots, X_n$ se define como
+                \begin{equation*}
+                    \rho := [\rho(X_i, X_j)]_{n\times n}
+                \end{equation*}
+            \end{definicion}
 \printbibliography
 \end{document}

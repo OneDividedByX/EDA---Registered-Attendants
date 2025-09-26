@@ -20,31 +20,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Estimaciones}{13}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Métricas estadísticas}{16}{section.4.3}%
+\contentsline {section}{\numberline {4.3}\textit {ETL} (Extracción-Transformación-Carga)}{16}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}\textit {ETL} (Extracción-Transformación-Carga)}{16}{section.4.4}%
+\contentsline {subsection}{\numberline {4.3.1}Extracción}{16}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Extracción}{16}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.3.2}Transformación}{17}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Transformación}{17}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.3.3}Carga}{19}{subsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.3}Carga}{18}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.4}EDA (Análisis Exploratorio de los Datos)}{19}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}EDA (Análisis Exploratorio de los Datos)}{19}{section.4.5}%
+\contentsline {subsection}{\numberline {4.4.1}Tipo de sesión}{20}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Tipo de sesión}{19}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.4.2}Cursos dictados}{22}{subsection.4.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}Cursos dictados}{21}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.4.3}Alumnos inscritos}{25}{subsection.4.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.3}Alumnos inscritos}{24}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.4.4}Alumnos participantes}{26}{subsection.4.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.4}Alumnos participantes}{25}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.4.5}Inscritos-Participantes}{27}{subsection.4.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.5}Inscritos-Participantes}{26}{subsection.4.5.5}%
+\contentsline {subsection}{\numberline {4.4.6}Duración de sesiones}{29}{subsection.4.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.6}Duración de sesiones}{28}{subsection.4.5.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.7}Puntualidad}{31}{subsection.4.5.7}%
+\contentsline {subsection}{\numberline {4.4.7}Puntualidad}{32}{subsection.4.4.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Resultados}{35}{chapter.5}%
 \defcounter {refsection}{0}\relax 
@@ -75,3 +73,7 @@
 \contentsline {chapter}{\numberline {7}Conclusiones}{39}{chapter.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {8}Anexos}{41}{chapter.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Probabilidad}{41}{section.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Métricas estadísticas}{42}{section.8.2}%
