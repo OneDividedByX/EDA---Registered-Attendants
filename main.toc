@@ -26,9 +26,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.2}Transformación}{17}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Carga}{19}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.3}Carga}{20}{subsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}EDA (Análisis Exploratorio de los Datos)}{19}{section.4.4}%
+\contentsline {section}{\numberline {4.4}EDA (Análisis Exploratorio de los Datos)}{20}{section.4.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.1}Tipo de sesión}{20}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 

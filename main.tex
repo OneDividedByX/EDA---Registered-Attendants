@@ -566,6 +566,13 @@
                 \end{figure}
             \subsection{Transformación}
                 Hasta este punto se cuenta con dos tipos de tablas: \textit{registrationMeetings} y \textit{usermeeting}. Sin embargo, necesitamos agrupar los datos previos y posteriores para cada sesión existente. Para ello podemos recurrir a cualquier \textit{software} (\textsc{Power BI}, \textsc{PowerQuery}) o lenguaje de programación (\textsc{Python}) que incorpore la operación \textbf{LEFT JOIN}.
+
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=0.4\textwidth]{Sources/SQL-left-join-example.png}
+                    \caption{Interpretación gráfica de la operación \textbf{LEFT JOIN} entre dos tablas}
+                    \label{fig:SQL-left-join-example}
+                \end{figure}
                 Esto será posible porque \textit{registrationMeetings} y \textit{usermeeting} cuentan con una columna que contiene el identificador único para cada sesión (\textit{ID} de \textit{Zoom}). Llamaremos a la tabla resultante como \textit{Meetings}.
 
                 \begin{observacion}
@@ -819,6 +826,14 @@
                 \begin{equation*}
                     \textup{\textbf{Duración}}:=\textup{\textbf{Hora Fin}}-\textup{\textbf{Hora Inicio}}
                 \end{equation*}
+                
+                Además, como esta variable es de tipo numérica consideramos lo siguiente al realizar la gráficas:
+                \begin{itemize}
+                    \item Se agrupan los valores de $I_s$ en intervalos de $8\,\textup{min}$.
+                    \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
+                \end{itemize}
+                El motivo de agrupar en intervalos de $8\,\textup{min}$ es porque si buscaramos partir en $9$ subintervalos los intervalos $[0;45]$ y $[0;90]$, los intervalos tendrían longitud $5\,\textup{min}$ y $10\,\textup{min}$ respectivamente, por lo que para evitar el tener que utilizar intervalos de longitud diferentes se toman intervalos que resulten del promedio aproximado de los mismos que es $7.5\,\textup{min}\approx8\,\textup{min}$.
+                
                 En el comportamiento global de esta variable podría no ser apreciable algún comportamiento en particular.
                 \begin{figure}[H]
                     \centering
