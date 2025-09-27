@@ -581,7 +581,13 @@
                     \label{fig:SQL-left-join-example}
                 \end{figure}
                 Esto será posible porque \textit{registrationMeetings} y \textit{usermeeting} cuentan con una columna que contiene el identificador único para cada sesión (\textit{ID} de \textit{Zoom}). Llamaremos a la tabla resultante como \textit{Meetings}.
-
+                
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=1\textwidth]{Sources/Meetings_Head.png}
+                    \caption{Primeras filas de \textit{Meetings}}
+                    \label{fig:meetings_head}
+                \end{figure}
                 \begin{observacion}
                     Para el procedimiento de transformación de las tablas involucradas se utiliza $\textup{\textsc{Power BI}}$ y $\textup{\textsc{PowerQuery}}$.
                 \end{observacion}
@@ -982,6 +988,12 @@
             \end{teorema}
 
         \section{Métricas estadísticas}
+            \begin{definicion}[Matriz de covarianza]
+                Sea $X=(X_1,X_2,\dots,X_n)$ una variable aleatoria en $\mathbb{R}^n$ con $X_i$ de varianza y media finitas. La \textbf{matriz de covarianza} de $X$ se define como 
+                \begin{equation*}
+                    K_{XX} := \Var{X} := \textup{cov}(X,X) := \EV{(X-\EV{X})(X-\EV{X})^T}
+                \end{equation*}
+            \end{definicion}
             \begin{definicion}[Estimador (estadístico)]
                 Es una función generada a partir de los datos de una muestra que se usa para estimar algún parámetro desconocido de la población. Cuando el estimador toma un valor en particular en base a los datos de una muestra, se llama \textbf{estimador puntual}.
             \end{definicion}
@@ -1007,9 +1019,10 @@
             \begin{ejemplo}[Contraste de la proporción (dos colas)]
                Sean las hipótesis:
                 \[
-                H_{0} : p = p_{0},
-                \quad
-                H_{1} : p \neq p_{0},
+                \begin{split}
+                    H_{0}: &p = p_{0}\\
+                    H_{1}: &p \neq p_{0}
+                \end{split}
                 \]
                 donde \(p\) es la probabilidad de éxito y \(q = 1-p\) es la probabilidad de fracaso y $p_{0}$ es el valor supuesto para la probabilidad de éxito en la hipótesis nula.
 
@@ -1024,6 +1037,37 @@
                     \item Si \(\abs{z_{c}} > z_{\alpha/2}\), se rechaza $H_{0}$.
                     \item Si \(\abs{z_{c}} \leq z_{\alpha/2}\), no se rechaza (o se acepta que se tiene suficiente evidencia) $H_{0}$.
                 \end{itemize}
+            \end{ejemplo}
+            \begin{ejemplo}[Contraste de normalidad (Shapiro-Wilk)]
+                Sea una muestra \(x_{1}, x_{2}, \ldots, x_{n}\) y supongamos las hipótesis:
+                \[
+                \begin{split}
+                    H_{0}: &\text{la muestra proviene de una distribución normal}\\
+                    H_{1}: &\text{la muestra no proviene de una distribución normal}
+                \end{split}
+                \]
+                
+                El estadístico de contraste está dado por
+                    \begin{equation*}
+                        W = \frac{\left( \sum_{i=1}^{n} a_i x_{(i)} \right)^{2}}{\sum_{i=1}^{n} (x_i - \overline{x})^{2}},
+                    \end{equation*}
+                    donde:
+                    \begin{itemize}
+                        \item $x_{(i)}$  denota el $i$-ésimo valor más pequeño de la muestra (estadístico de orden $i$)
+                        
+                        \item $\overline{x} = \dfrac{x_{1}+\cdots+x_{n}}{n}$ es la media muestral
+                        
+                        \item Los coeficientes $a_i$ están dados por
+                        \[
+                            (a_{1},\dots,a_{n}) = \frac{m^{\mathsf{T}} V^{-1}}{C}, \quad
+                            C = \| V^{-1} m \| = \left( m^{\mathsf{T}} V^{-1} V^{-1} m \right)^{1/2}
+                        \]
+                        
+                        \item El vector $m = (m_{1},\dots,m_{n})^{\mathsf{T}}$ está formado por los valores esperados de los estadísticos de orden 
+                        de las variables aleatorias independientes e idénticamente distribuidas, muestreadas de una distribución normal estándar.
+                        
+                        \item $V$ es la matriz de covarianza los estadísticos de orden normales, es decir, $V=\text{Cov}\left(x_{(1)},\dots,x_{(n)}\right)$.
+                    \end{itemize}
             \end{ejemplo}
             \begin{definicion}[Kurtosis]
                 Sea $X$ una variable aleatoria con media $\mu$ y varianza $\sigma^2$. La \textbf{kurtosis} de $X$ se define como
