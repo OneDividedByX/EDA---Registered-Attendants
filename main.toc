@@ -44,7 +44,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.7}Puntualidad}{35}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Resultados}{39}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Discusión}{39}{chapter.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}Por curso}{39}{section.5.1}%
 \defcounter {refsection}{0}\relax 
@@ -68,12 +68,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}Por fecha y hora}{39}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Discusión}{41}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{41}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusiones}{43}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Anexos}{43}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Anexos}{45}{chapter.8}%
+\contentsline {section}{\numberline {7.1}Miscelánea}{43}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Probabilidad}{45}{section.8.1}%
+\contentsline {section}{\numberline {7.2}Probabilidad}{43}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Métricas estadísticas}{46}{section.8.2}%
+\contentsline {section}{\numberline {7.3}Métricas estadísticas}{44}{section.7.3}%

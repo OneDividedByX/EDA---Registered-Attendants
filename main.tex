@@ -666,7 +666,7 @@
             De hecho, al hacer uso de herramientas que permiten obtener visualizaciones o gráficos (histogramas) a partir de los datos podemos apoyarnos de los mismos para ver qué distribuciones tienen las variables aleatorias involucradas.
             
             Sin embargo, en esta sección solo se presentan los gráficos y tablas sin recurrir a la interpretación de resultados.
-             \section{Tipo de sesión}
+            \section{Tipo de sesión}
                 Aquí la variable aleatoria analizada es $T_\mathcal{S}$. Esta presenta dos posibles valores: $\text{Taller}$ o $\text{Tutoria}$, por lo que se trata de una variable categórica. Al existir dos posibles valores, se esperaría que la variable aleatoria $T_\mathcal{S}$ sea uniformemente distribuida, es decir,
                 \begin{equation}\label{uniforme tipo de sesion}
                     \Prob{T_\mathcal{S}=\text{Taller}}=\Prob{T_\mathcal{S}=\text{Tutoria}}=\frac{1}{2}
@@ -906,7 +906,7 @@
                     \caption{Histograma de la puntualidad en tutorías}
                 \end{figure}
                 Esto tiene sentido, pues, debido a que la puntualidad es indistinta al tipo de sesión.
-    \chapter{Resultados}        
+    \chapter{Discusión}        
         \section{Por curso}
             \subsection{Matemática I}
             \subsection{Matemática II}
@@ -918,7 +918,6 @@
             \subsection{Talleres}
             \subsection{Tutorías}
         \section{Por fecha y hora}
-    \chapter{Discusión}
         
     \chapter{Conclusiones}
         Distribución del número de inscritos (Por curso y global: el número global es la suma de los números por curso (variables aleatorias))
@@ -929,15 +928,16 @@
             \item El número de asistentes presenta una correlación lineal positiva fuerte con el número de inscritos.
         \end{enumerate}
     \chapter{Anexos}
-        \begin{definicion}[Función indicatriz]
-            Sea $A$ un subconjunto de un conjunto $X$, definimos la función indicatriz de $A$ sobre $X$ como $\mathds{1}_A:X\longrightarrow\{0,1\}$ con
-            \begin{equation*}
-                \mathds{1}_A (x)=\left\{\begin{array}{cl}
-                    1&,\enspace x\in A  \\
-                    0&,\enspace x \in A^\setcomplement
-                \end{array}\right.
-            \end{equation*}
-        \end{definicion}
+        \section{Miscelánea}
+            \begin{definicion}[Función indicatriz]
+                Sea $A$ un subconjunto de un conjunto $X$, definimos la función indicatriz de $A$ sobre $X$ como $\mathds{1}_A:X\longrightarrow\{0,1\}$ con
+                \begin{equation*}
+                    \mathds{1}_A (x)=\left\{\begin{array}{cl}
+                        1&,\enspace x\in A  \\
+                        0&,\enspace x \in A^\setcomplement
+                    \end{array}\right.
+                \end{equation*}
+            \end{definicion}
         \section{Probabilidad}
             \begin{definicion}[Probabilidad condicional]
                 Sean $A$ y $B$ eventos de un espacio de probabilidad $(\Omega,\mathcal{F},\Probsymb)$. La probabilidad de $A$ dado $B$ se define como
@@ -1076,7 +1076,7 @@
                         \item El vector $m = (m_{1},\dots,m_{n})^{\mathsf{T}}$ está formado por los valores esperados de los estadísticos de orden 
                         de las variables aleatorias independientes e idénticamente distribuidas, muestreadas de una distribución normal estándar.
                         
-                        \item $V$ es la matriz de covarianza los estadísticos de orden normales, es decir, $V=\text{Cov}\left(x_{(1)},\dots,x_{(n)}\right)$.
+                        \item $V$ es la matriz de covarianza los estadísticos de orden normales, es decir, $$V=\textup{cov}\left(x_{(1)},\dots,x_{(n)}\right)$$
                     \end{itemize}
             \end{ejemplo}
             \begin{definicion}[Kurtosis]

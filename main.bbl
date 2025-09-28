@@ -19,45 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
-    \entry{JMLR:v17:14-296}{article}{}
-      \name{author}{2}{}{%
-        {{hash=f536a5b1bc63890da21d6091897b1cad}{%
-           family={Arlot},
-           familyi={A\bibinitperiod},
-           given={Sylvain},
-           giveni={S\bibinitperiod}}}%
-        {{hash=7c93387f639cd7501ce9103ec56dc2d9}{%
-           family={Lerasle},
-           familyi={L\bibinitperiod},
-           given={Matthieu},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{6a3c7cbb7dbd50dbbdc41fe71092a8c3}
-      \strng{fullhash}{6a3c7cbb7dbd50dbbdc41fe71092a8c3}
-      \strng{bibnamehash}{6a3c7cbb7dbd50dbbdc41fe71092a8c3}
-      \strng{authorbibnamehash}{6a3c7cbb7dbd50dbbdc41fe71092a8c3}
-      \strng{authornamehash}{6a3c7cbb7dbd50dbbdc41fe71092a8c3}
-      \strng{authorfullhash}{6a3c7cbb7dbd50dbbdc41fe71092a8c3}
-      \field{labelalpha}{AL16}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Machine Learning Research}
-      \field{number}{208}
-      \field{title}{Choice of V for V-Fold Cross-Validation in Least-Squares Density Estimation}
-      \field{volume}{17}
-      \field{year}{2016}
-      \true{nocite}
-      \field{pages}{1\bibrangedash 50}
-      \range{pages}{50}
-      \verb{urlraw}
-      \verb http://jmlr.org/papers/v17/14-296.html
-      \endverb
-      \verb{url}
-      \verb http://jmlr.org/papers/v17/14-296.html
-      \endverb
-    \endentry
     \entry{Makela}{book}{}
       \name{author}{3}{}{%
         {{hash=ae64b8d3ed78516850991c1b81d1da26}{%
@@ -240,7 +201,7 @@
       \verb https://www.utstat.toronto.edu/~brunner/oldclass/appliedf11/handouts/2101f11RandomVectorsMVN.pdf
       \endverb
     \endentry
-    \entry{Cuhk}{misc}{}
+    \entry{Infe2:ejem}{misc}{}
       \name{author}{1}{}{%
         {{hash=88183b946cc5f0e8c96b2e66e1c74a7e}{%
            family={Unknown},
@@ -252,18 +213,17 @@
       \strng{authorbibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
       \strng{authornamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
       \strng{authorfullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
-      \field{labelalpha}{Unk}
+      \field{labelalpha}{Unk12}
       \field{sortinit}{U}
       \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Subgradient of Convex Function}
+      \field{year}{2012}
       \true{nocite}
       \verb{urlraw}
-      \verb https://www.math.cuhk.edu.hk/course_builder/1920/math4230/Note8.pdf
+      \verb https://www.ugr.es/~mvargas/Infe2.pdf
       \endverb
       \verb{url}
-      \verb https://www.math.cuhk.edu.hk/course_builder/1920/math4230/Note8.pdf
+      \verb https://www.ugr.es/~mvargas/Infe2.pdf
       \endverb
     \endentry
     \entry{utp:reservas}{misc}{}
