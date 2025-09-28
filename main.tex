@@ -320,8 +320,8 @@
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \chapter*{Resumen}\addcontentsline{toc}{chapter}{Resumen}
-        El contenido principal del informe se centra en realizar un análisis exploratorio de los datos obtenidos a partir de las sesiones de talleres y tutorías dictadas a los estudiantes de la Universidad Tecnológica del Perú, con el fin de determinar si existen variables aleatorias que modelen el comportamiento estadístico de los datos. Se presenta el esquema matemático del modelo y los resultados experimentales obtenidos a partir de los datos usando \textsc{Power BI}, \textsc{PowerQuery} y \textsc{Python}.
-    \chapter{Introducción}
+        El contenido principal del informe se centra en realizar un análisis exploratorio de los datos obtenidos a partir de las sesiones de talleres y tutorías dictadas a los estudiantes de la \textit{Universidad Tecnológica del Perú}, con el fin de determinar si existen variables aleatorias que modelen el comportamiento estadístico de los datos. Se presenta el esquema matemático del modelo y los resultados experimentales obtenidos a partir de los datos usando \textsc{Power BI}, \textsc{PowerQuery} y \textsc{Python}.
+    \chapter*{Introducción}\addcontentsline{toc}{chapter}{Introducción}
         El presente informe corresponde a las Prácticas Pre-Profesionales realizadas en la
         Universidad Tecnológica del Perú (UTP), desde el 3 de marzo de 2025 hasta el 2 de agosto de 2025.
         
@@ -329,7 +329,7 @@
         
         En particular, la sede en cuestión a tratar (\textit{UTP - Lima Centro}) está localizada en \textit{Av. Arequipa 265, Lima 15046}.
         
-    \chapter{Antecedentes}
+    \chapter*{Antecedentes}\addcontentsline{toc}{chapter}{Antecedentes}
         En la Universidad Tecnológica del Perú, en vista de la necesidad de brindar apoyo académico a los estudiantes en cursos de matemática o física se realizan sesiones extracurriculares para todos los estudiantes que se clasifican en \textit{talleres} y \textit{tutorías}. Las sesiones son no obligatorias, por lo que los estudiantes pueden optar por inscribirse o no a este tipo de actividad y, estando inscritos, pueden o no optar por asistir. Estas sesiones pueden ser dictadas en forma \textit{presencial} o \textit{virtual} (mediante la plataforma \textbf{\textit{Zoom}}).
         
         El objetivo general en ambos tipos de sesiones es la de apoyar a los estudiantes en la resolución de problemas relacionados a los temas vistos en las clases de los correspondientes cursos. Sin embargo, la diferencia entre ambos tipos de sesiones radica en el tiempo y el alcance.
@@ -356,7 +356,7 @@
                     \item Determinar la relación entre el número de alumnos inscritos y el número de alumnos asistentes a sesiones (análisis por curso y global).
                     \item Determinar la distribución del número de alumnos asistentes dado un número dado el número de alumnos asistentes (análisis por curso y global).
                 \end{itemize}
-        \chapter{Trabajo realizado}
+        \chapter{Fundamento teórico}
             \section{Modelo matemático}
             Antes de estudiar las variables del problema, las planteamos matemáticamente. Para ello presentamos notaciones adecuadas y convenientes para este contexto.
 
@@ -534,8 +534,11 @@
             \end{itemize}
             respectivamente. Además, cuando el tamaño $n$ de los datos es suficientemente grande la diferencia entre la media poblacional y muestral se hace ínfima, por lo que en tales casos la elección del estimador es indistinta.
         
-        \section{\textit{ETL} (Extracción-Transformación-Carga)}
-            \subsection{Extracción}
+        \chapter{Procedimiento empleado}
+            Existen varios procedimientos para la recopilación de datos y tienen como objetivo obtener un conjunto de datos que refleje la situación de interés (limpio) y que pueda ser utilizado para el análisis.
+            
+            En particular, se muestra el procedimiento de recopilación de datos las sesiones dictadas en la \textit{Universidad Tecnológica del Perú} mediante  \textit{ETL} (Extracción-Transformación-Carga).
+            \section{Extracción}
                 Para concretar el análisis es necesario conocer los elementos de $\mathcal{S}$ (sesiones), es decir, contar con el conjunto de datos de interés. Por ello es necesario realizar la extracción de los datos.
                 
                 Desde la plataforma \cite{utp:reservas} es posible acceder al historial de todas las sesiones asignadas, detallando el curso, el tipo, la  fecha y hora y el número de alumnos inscritos de cada sesión (si se cuenta con acceso). Sin embargo, no es posible acceder al número de alumnos asistentes, por lo que se busca otra forma de extraer los datos. De hecho, incluso si estos últimos datos fueran accesibles desde esta plataforma aún se tendría un problema: no hay forma de exportar los datos.
@@ -571,7 +574,7 @@
                     \caption{Primeras filas de \textit{usermeeting}}
                     \label{fig:usermeetings_head}
                 \end{figure}
-            \subsection{Transformación}
+            \section{Transformación}
                 Hasta este punto se cuenta con dos tipos de tablas: \textit{registrationMeetings} y \textit{usermeeting}. Sin embargo, necesitamos agrupar los datos previos y posteriores para cada sesión existente. Para ello podemos recurrir a cualquier \textit{software} (\textsc{Power BI}, \textsc{PowerQuery}) o lenguaje de programación (\textsc{Python}) que incorpore la operación \textbf{LEFT JOIN}.
 
                 \begin{figure}[H]
@@ -620,13 +623,9 @@
                     \caption{Primeras filas y columnas de \textit{MeetingsCleanInfo}}
                     \label{fig:meetingscleaninfo_head}
                 \end{figure}
-            \subsection{Carga}
+            \section{Carga}
                 Dada la poca complejidad y el poco tamaño de los datos, esta etapa consiste únicamente en la elaboración de gráficos y/o visualizaciones con \textsc{Power BI} a partir de las tablas obtenidas, principalmente \textit{MeetingsCleanInfo}.
-        \section{EDA (Análisis Exploratorio de los Datos)}
-            En general, para realizar el análisis exploratorio de los datos se utiliza una combinación de uso de \textsc{Power BI} y \textsc{Python}, permitiendo complementar las características y ventajas que cada uno posee. Recordemos que todo el análisis se hace a través de \textit{MeetingsCleanInfo} que contiene los datos de interés (elementos de $\mathcal{S}$).
-            
-            De hecho, al hacer uso de herramientas que permiten obtener visualizaciones o gráficos (histogramas) a partir de los datos podemos apoyarnos de los mismos para ver qué distribuciones tienen las variables aleatorias involucradas.
-            
+
             Adelantamos que el tamaño de la tabla \textit{MeetingsCleanInfo} es de 147 filas, y por tanto $\card{\mathcal{S}}=147$, y 12 columnas las cuales son:
             {   \footnotesize
                 \begin{multicols}{3}
@@ -661,7 +660,13 @@
                 \end{multicols}
             }
             los cuales son los elementos de $\mathcal{C}$.
-             \subsection{Tipo de sesión}
+        \chapter{Resultados}
+            Los resultados obtenidos derivan de un análisis exploratorio de los datos (\textit{EDA}) se utiliza una combinación de uso de \textsc{Power BI} y \textsc{Python}, permitiendo complementar las características y ventajas que cada uno posee. Recordemos que todo el análisis se hace a través de \textit{MeetingsCleanInfo} que contiene los datos de interés (elementos de $\mathcal{S}$).
+            
+            De hecho, al hacer uso de herramientas que permiten obtener visualizaciones o gráficos (histogramas) a partir de los datos podemos apoyarnos de los mismos para ver qué distribuciones tienen las variables aleatorias involucradas.
+            
+            Sin embargo, en esta sección solo se presentan los gráficos y tablas sin recurrir a la interpretación de resultados.
+             \section{Tipo de sesión}
                 Aquí la variable aleatoria analizada es $T_\mathcal{S}$. Esta presenta dos posibles valores: $\text{Taller}$ o $\text{Tutoria}$, por lo que se trata de una variable categórica. Al existir dos posibles valores, se esperaría que la variable aleatoria $T_\mathcal{S}$ sea uniformemente distribuida, es decir,
                 \begin{equation}\label{uniforme tipo de sesion}
                     \Prob{T_\mathcal{S}=\text{Taller}}=\Prob{T_\mathcal{S}=\text{Tutoria}}=\frac{1}{2}
@@ -713,7 +718,7 @@
                     \caption{Aproximación de la distribución de $T_\mathcal{S}$ dado $C$}
                     \label{tab:distribucion_Ts_C}
                 \end{table}
-            \subsection{Cursos dictados}
+            \section{Cursos dictados}
                 Aquí la variable aleatoria analizada es $C$, del cual conocemos los posibles valores que toma ya que conocemos los elementos de $\mathcal{C}$ como se muestra en \ref{cursos dictados}. Por distintos motivos (como demanda) es muy posible que existan cursos con mayor o menor asignación, por lo que no se puede intuir la distribución de $C$. En el siguiente gráfico muestra un gráfico de barras obtenido a partir de \textit{MeetingsCleanInfo} que resume la aproximacion obtenida de la distribución de la variable aleatoria $C$.
                 \begin{figure}[H]
                     \centering
@@ -767,10 +772,10 @@
                     \caption{Aproximación de la distribución de $C$ dado $T_\mathcal{S}$}
                     \label{tab:distribucion_C_Ts}
                 \end{table}
-            \subsection{Alumnos inscritos}
+            \section{Alumnos inscritos}
                 Como sabemos, $\mathcal{I}$ representa la variable aleatoria número de alumnos inscritos en una sesión y mediante \ref{Inscritos-Asistentes Montecarlo} se puede obtener su distribución aproximada, o también mediante \ref{prob total condicional cursos}.
                 
-                El siguiente gráfico muestra el histograma del número de alumnos inscritos en todas las sesiones, es decir el conteo sobre los valores posibles de $I_s$ para todos los $s\in\mathcal{S}$. Además, como esta variable es de tipo numérica consideramos lo siguiente al realizar la gráfica:
+                El siguiente gráfico muestra el histograma del número de alumnos inscritos en todas las sesiones, es decir el conteo sobre los valores posibles de $I_s$ para todos los $s\in\mathcal{S}$. Además, como esta variable es de tipo numérica discreta consideramos lo siguiente al realizar la gráfica:
                 \begin{itemize}
                     \item No se agrupan los valores de $I_s$ en intervalos.
                     \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
@@ -783,10 +788,10 @@
                     \label{fig:histograma_InscritosGlobal}
                 \end{figure}
                 Lo que es bastante claro de apreciar es que los valores de $I_s$ más frecuentes tienden a ser los que tienen valores más pequeños pero con una alta dispersión. Es decir, el conteo de alumnos inscritos es bastante concentrado en un pequeño rango de valores.
-            \subsection{Alumnos participantes}
+            \section{Alumnos participantes}
                 Como sabemos, $\mathcal{A}$ representa la variable aleatoria número de alumnos participantes o asistentes en una sesión y mediante \ref{Inscritos-Asistentes Montecarlo} se puede obtener su distribución aproximada, o también mediante \ref{prob total condicional cursos}.
                 
-                El siguiente gráfico muestra el histograma del número de alumnos participantes en todas las sesiones, es decir el conteo sobre los valores posibles de $A_s$ para todos los $s\in\mathcal{S}$. Además, como esta variable es de tipo numérica consideramos lo siguiente al realizar la gráfica (al igual que para la Figura \ref{fig:histograma_InscritosGlobal}):
+                El siguiente gráfico muestra el histograma del número de alumnos participantes en todas las sesiones, es decir el conteo sobre los valores posibles de $A_s$ para todos los $s\in\mathcal{S}$. Además, como esta variable es de tipo numérica discreta consideramos lo siguiente al realizar la gráfica (al igual que para la Figura \ref{fig:histograma_InscritosGlobal}):
                 \begin{itemize}
                     \item No se agrupan los valores de $I_s$ en intervalos.
                     \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
@@ -799,7 +804,7 @@
                     \label{fig:histograma_ParticipantesGlobal}
                 \end{figure}
                 Lo que sí es apreciable es que la tendencia en la distribución de $A_s$ es bastante similar a la de $I_s$.
-            \subsection{Inscritos-Participantes}
+            \section{Inscritos-Participantes}
                 La relación que tienen $\mathcal{I}$ y $\mathcal{A}$ parece tener algún tipo de dependencia. Como es usual con datos numéricos, se puede analizar los coeficientes de correlación (Pearson) entre los mismos. Mediante el uso de librerías de \textsc{Python} se puede obtener la matriz de correlación (Pearson) asociada.
                 \begin{figure}[H]
                     \centering
@@ -834,13 +839,13 @@
                     \EV{A\mid I=n}\approx 0.69n-0.643
                 \end{equation*}
                 y deberíamos ser capaces de verificar que $A-0.69I+0.643\sim\varepsilon_I\sim\mathcal{N}(0,\sigma_I^2)$ mediante el contraste de hipótesis.
-            \subsection{Duración de sesiones}
+            \section{Duración de sesiones}
                 La columna \textbf{Duración (minutos)} no se encuentra originalmente en \textit{MeetingsClean} sino que se añade a la misma apareciendo en \textit{MeetingsCleanInfo}. Esta columna contiene la diferencia (en minutos) de la hora fin la hora de inicio de la sesión en su correspondiente fila, por lo que podemos decir que 
                 \begin{equation*}
                     \textup{\textbf{Duración}}:=\textup{\textbf{Hora Fin}}-\textup{\textbf{Hora Inicio}}
                 \end{equation*}
                 
-                Además, como esta variable es de tipo numérica consideramos lo siguiente al realizar la gráficas:
+                Además, como esta variable es de tipo numérica continua consideramos lo siguiente al realizar la gráficas:
                 \begin{itemize}
                     \item Se agrupan los valores de $I_s$ en intervalos de $8\,\textup{min}$.
                     \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
@@ -864,40 +869,44 @@
                     \includegraphics[width=1\textwidth]{Sources/histograma_DuracionTutoria.png}
                     \caption{Histograma de la duración de las sesiones en tutorías}
                 \end{figure}
-            \subsection{Puntualidad}
-                La columna \textbf{Puntualidad (minutos)} no se encuentra originalmente en \textit{MeetingsClean} sino que se añade a la misma apareciendo en \textit{MeetingsCleanInfo}. Esta columna contiene la diferencia (en minutos) de la hora programada y la hora de inicio de la sesión en su correspondiente fila, por lo que podemos decir que 
+            \section{Puntualidad}
+                La columna \textbf{Puntualidad (minutos)}, o de forma simplificada \textbf{Puntualidad}, no se encuentra originalmente en \textit{MeetingsClean} sino que se añade a la misma apareciendo en \textit{MeetingsCleanInfo}. Esta columna contiene la diferencia (en minutos) de la hora programada y la hora de inicio de la sesión en su correspondiente fila, por lo que podemos decir que 
                 \begin{equation*}
                     \textup{\textbf{Puntualidad}}:=\textup{\textbf{Hora}}-\textup{\textbf{Hora Inicio}}
                 \end{equation*}
+                Además, como esta variable es de tipo numérica continua consideramos lo siguiente al realizar la gráficas:
+                \begin{itemize}
+                    \item Se agrupan los valores de $\textup{\textbf{Puntualidad}}$ en intervalos de $1\,\textup{min}$.
+                    \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
+                \end{itemize}
+                
                 Dado que el reglamento de la \textit{Universidad Tecnológica del Perú} indica que, tanto para talleres como para tutorías, la hora de ingreso a la sesión debe ser entre $5$ y $10$ minutos antes de la hora programada, entonces se esperaría que los valores registrados en la columna \textbf{Puntualidad (minutos)} se encuentren mayoritariamente concentrados en el intervalo $\mathopen[5;10\mathclose]$.
                 
                 Sin embargo, también debemos tener en cuenta que podrían presentarse valores atípicos, pues como ya se mencionó \textit{Zoom} registra que una sesión ha sido iniciada si es que existe algún integrante en la sesión e independiente de si se trata del anfitrión (mi persona) o no.
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=0.7\textwidth]{Sources/histogram_Puntualidad.png}
-                    \caption{Histograma de la puntualidad}
+                    \caption{Histograma de la puntualidad (\textsc{Python})}
                 \end{figure}
-                En efecto, los valores atípicos se aparecen y estos son los valores más altos. Esto podría explicarse mediante el hecho de que algún estudiante ingresó a la sesión minutos muy antes de la hora programada y permaneció hasta la hora en que el anfitrión ingresó.
+                En efecto, los valores atípicos se aparecen y estos son los valores de \textbf{Puntualidad} más altos. Esto podría explicarse mediante el hecho de que algún estudiante ingresó a la sesión minutos muy antes de la hora programada y permaneció hasta la hora en que el anfitrión ingresó.
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=1\textwidth]{Sources/histograma_PuntualidadGlobal.png}
-                    \caption{Histograma de la puntualidad}
+                    \caption{Histograma de la puntualidad (\textsc{Power BI})}
                 \end{figure}
                 El comportamiento global es muy similar al observado al comportamiento en talleres y tutorías.
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=1\textwidth]{Sources/histograma_PuntualidadTaller.png}
-                    \caption{Histograma de la puntualidad}
+                    \caption{Histograma de la puntualidad en talleres}
                 \end{figure}
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=1\textwidth]{Sources/histograma_PuntualidadTutoria.png}
-                    \caption{Histograma de la puntualidad}
+                    \caption{Histograma de la puntualidad en tutorías}
                 \end{figure}
                 Esto tiene sentido, pues, debido a que la puntualidad es indistinta al tipo de sesión.
-    \chapter{Resultados}
-        
-        Distribución del número de inscritos (Por curso y global: el número global es la suma de los números por curso (variables aleatorias))
+    \chapter{Resultados}        
         \section{Por curso}
             \subsection{Matemática I}
             \subsection{Matemática II}
@@ -912,6 +921,7 @@
     \chapter{Discusión}
         
     \chapter{Conclusiones}
+        Distribución del número de inscritos (Por curso y global: el número global es la suma de los números por curso (variables aleatorias))
         \begin{enumerate}
             \item La distribución de la duración de las sesiones es muy diferente en talleres y tutorías.
             \item La distribución de la puntualidad de las sesiones es muy diferente en talleres y tutorías.
