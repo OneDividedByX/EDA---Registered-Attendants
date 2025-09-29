@@ -30,50 +30,58 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Resultados}{23}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Tipo de sesión}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Tipo de sesión}{24}{section.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Cursos dictados}{25}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Alumnos inscritos}{28}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Alumnos inscritos}{27}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Alumnos participantes}{29}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Alumnos participantes}{28}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Inscritos-Participantes}{30}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Duración de sesiones}{29}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Duración de sesiones}{32}{section.4.6}%
+\contentsline {section}{\numberline {4.6}Puntualidad}{31}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Puntualidad}{35}{section.4.7}%
+\contentsline {section}{\numberline {4.7}Extra: Correlación entre variables numéricas}{33}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discusión}{39}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Discusión}{35}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Por curso}{39}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Tipo}{35}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Matemática I}{39}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Curso}{36}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Matemática II}{39}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.2.1}Matemática I}{37}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Cálculo I}{39}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2.2}Matemática II}{37}{subsection.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Cálculo II}{39}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.2.3}Cálculo I}{37}{subsection.5.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.5}Estadística Descriptiva}{39}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.2.4}Cálculo II}{37}{subsection.5.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.6}Geometría}{39}{subsection.5.1.6}%
+\contentsline {subsection}{\numberline {5.2.5}Estadística Descriptiva}{37}{subsection.5.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Por tipo}{39}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.6}Geometría}{37}{subsection.5.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Talleres}{39}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.7}Matemática para Medicina}{37}{subsection.5.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Tutorías}{39}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Inscritos y participantes}{37}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Por fecha y hora}{39}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Inscritos}{37}{subsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusiones}{41}{chapter.6}%
+\contentsline {subsection}{\numberline {5.3.2}Participantes}{38}{subsection.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Anexos}{43}{chapter.7}%
+\contentsline {subsection}{\numberline {5.3.3}Inscritos-Participantes}{38}{subsection.5.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Miscelánea}{43}{section.7.1}%
+\contentsline {section}{\numberline {5.4}Duración de las sesiones}{40}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Probabilidad}{43}{section.7.2}%
+\contentsline {section}{\numberline {5.5}Puntualidad}{41}{section.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Métricas estadísticas}{44}{section.7.3}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{43}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Anexos}{45}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Miscelánea}{45}{section.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Probabilidad}{45}{section.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Métricas estadísticas}{46}{section.7.3}%

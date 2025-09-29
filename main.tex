@@ -666,150 +666,255 @@
             De hecho, al hacer uso de herramientas que permiten obtener visualizaciones o gráficos (histogramas) a partir de los datos podemos apoyarnos de los mismos para ver qué distribuciones tienen las variables aleatorias involucradas.
             
             Sin embargo, en esta sección solo se presentan los gráficos y tablas sin recurrir a la interpretación de resultados.
+            \newpage
             \section{Tipo de sesión}
-                Aquí la variable aleatoria analizada es $T_\mathcal{S}$. Esta presenta dos posibles valores: $\text{Taller}$ o $\text{Tutoria}$, por lo que se trata de una variable categórica. Al existir dos posibles valores, se esperaría que la variable aleatoria $T_\mathcal{S}$ sea uniformemente distribuida, es decir,
-                \begin{equation}\label{uniforme tipo de sesion}
-                    \Prob{T_\mathcal{S}=\text{Taller}}=\Prob{T_\mathcal{S}=\text{Tutoria}}=\frac{1}{2}
-                \end{equation}
-                De hecho, se puede comprobar ello mediante los datos obtenidos. El siguiente gráfico muestra un gráfico de barras obtenida a partir de \textit{MeetingsCleanInfo} que resume la aproximación obtenida de la distribución de las variables aleatorias $T_\mathcal{S}$.
+                
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=1\textwidth]{Sources/histograma_TipoGlobal.png}
-                    \caption{Gráfico de barras del tipo de sesión}
+                    \caption{Gráfico de barras del tipo de sesión (\textsc{Power BI})}
                     \label{fig:histograma_TipoGlobal}
                 \end{figure}
-                Con ello formamos la tabla
-                \begin{table}[H]
-                    \centering
-                    \begin{tabular}{|c|c|}
-                        \hline
-                        $t_s$ & $\hat{\Probsymb}_{\mathcal{T}_\mathcal{S}}(t_s)$ \\ \hline
-                        Taller & $\frac{71}{147}$ \\ \hline
-                        Tutoria & $\frac{76}{147}$ \\ \hline
-                    \end{tabular}
-                    \caption{Aproximación de la distribución de $T_\mathcal{S}$}
-                \end{table}
-                Entonces, de acuerdo a lo planteado en \ref{uniforme tipo de sesion} y usando las aproximaciones planteadas en \ref{Otras variables aleatorias Montecarlo} se puede comprobar que la aproximación obtenida de la distribución de $T_\mathcal{S}$ es correcta pues de acuerdo a la gráfica de la Figura \ref{fig:histograma_TipoGlobal}.
-                \begin{equation}
-                    \hat{\Probsymb}_{\mathcal{T}_\mathcal{S}}(\text{Taller}) = \frac{76}{147} \approx 0.517, \quad \hat{\Probsymb}_{\mathcal{T}_\mathcal{S}}(\text{Tutoria}) = \frac{71}{147} \approx 0.483
-                \end{equation}
-                Ahora, veamos qué sucede con la distribución de $T_\mathcal{S}$ para cada uno de los cursos, es decir, $T_\mathcal{S}$ dado $C$.
+                
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=1\textwidth]{Sources/histograma_TipoCurso.png}
-                    \caption{Gráfico de barras del tipo de sesión por curso}
+                    \caption{Gráfico de barras del tipo de sesión por curso (\textsc{Power BI})}
                     \label{fig:histograma_TipoCurso}
                 \end{figure}
-                Dado que tratamos con pocos cursos, es decir $\card{\mathcal{C}}=7$, podemos mostrar en una tabla la aproximación obtenida de la distribución de $T_\mathcal{S}$ dado $C$.
-                \begin{table}[H]
-                    \centering
-                    \begin{tabular}{|c|c|c|c|}
-                        \hline
-                        \multicolumn{2}{|c|}{\multirow{2}{*}{$\hat{\Probsymb}_{C=c}(T_\mathcal{S}=t_s)$}} & \multicolumn{2}{c|}{$t_s$} \\ \cline{3-4}
-                        \multicolumn{2}{|c|}{} & Taller & Tutoría \\ \hline
-                        \multirow{7}{*}{$c$} & Matemática I & $\frac{9}{21}$ & $\frac{12}{21}$ \\ \cline{2-4}
-                        & Matemática II & $\frac{5}{8}$ & $\frac{3}{8}$  \\ \cline{2-4}
-                        & Cálculo I & $\frac{22}{31}$ & $\frac{9}{31}$  \\ \cline{2-4}
-                        & Cálculo II & $\frac{12}{17}$ & $\frac{5}{17}$  \\ \cline{2-4}
-                        & Estadística Descriptiva & $\frac{10}{34}$ & $\frac{24}{34}$  \\ \cline{2-4}
-                        & Geometría & $\frac{10}{26}$ & $\frac{16}{26}$  \\ \cline{2-4}
-                        & Matemática para Medicina & $\frac{3}{10}$ & $\frac{7}{10}$   \\ \hline
-                    \end{tabular}
-                    \caption{Aproximación de la distribución de $T_\mathcal{S}$ dado $C$}
-                    \label{tab:distribucion_Ts_C}
-                \end{table}
+                
             \section{Cursos dictados}
-                Aquí la variable aleatoria analizada es $C$, del cual conocemos los posibles valores que toma ya que conocemos los elementos de $\mathcal{C}$ como se muestra en \ref{cursos dictados}. Por distintos motivos (como demanda) es muy posible que existan cursos con mayor o menor asignación, por lo que no se puede intuir la distribución de $C$. En el siguiente gráfico muestra un gráfico de barras obtenido a partir de \textit{MeetingsCleanInfo} que resume la aproximacion obtenida de la distribución de la variable aleatoria $C$.
+                
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=1\textwidth]{Sources/histograma_CursosGlobal.png}
-                    \caption{Histograma de los cursos dictados}
+                    \caption{Histograma de los cursos dictados (\textsc{Power BI})}
                     \label{fig:histograma_CursosGlobal}
                 \end{figure}
-                Con ello formamos la tabla
-                \begin{table}[H]
-                    \centering
-                    \begin{tabular}{|c|c|}
-                        \hline
-                        c & $\hat{\Probsymb}_{\mathcal{C}}(c)$ \\ \hline
-                        Matemática I & $\frac{21}{147}$ \\ \hline
-                        Matemática II & $\frac{8}{147}$ \\ \hline
-                        Cálculo I & $\frac{31}{147}$ \\ \hline
-                        Cálculo II & $\frac{17}{147}$ \\ \hline
-                        Estadística Descriptiva & $\frac{34}{147}$ \\ \hline
-                        Geometría & $\frac{26}{147}$ \\ \hline
-                        Matemática para Medicina & $\frac{10}{147}$ \\ \hline
-                    \end{tabular}
-                    \caption{Aproximación de la distribución de $C$}
-                \end{table}
+                
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=1\textwidth]{Sources/histograma_CursosTaller.png}
-                    \caption{Histograma de los cursos dictados en talleres}
+                    \caption{Histograma de los cursos dictados en talleres (\textsc{Power BI})}
                     \label{fig:histograma_CursosTaller}
                 \end{figure}
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=1\textwidth]{Sources/histograma_CursosTutoría.png}
-                    \caption{Histograma de los cursos dictados en tutorías}
+                    \caption{Histograma de los cursos dictados en tutorías (\textsc{Power BI})}
                     \label{fig:histograma_CursosTutoría}
                 \end{figure}
-                En base a esto último, mostramos la tabla de la aproximación de la distribución de $C$ dado $T_\mathcal{S}$. Se resalta el hecho de que $\card{\mathcal{S}\cap\{s\mid t_s=\text{Taller}\}}=76$ y $\card{\mathcal{S}\cap\{s\mid t_s=\text{Tutoria}\}}=71$ ya que estos valores aparecen en la parte superior de la Figura \ref{fig:histograma_TipoGlobal}.
-                \begin{table}[H]
-                    \centering                    
-                    \begin{tabular}{|c|c|c|c|}
-                        \hline
-                        \multicolumn{2}{|c|}{\multirow{2}{*}{$\hat{\Probsymb}_{T_\mathcal{S}=t_s}(C=c)$}} & \multicolumn{2}{c|}{$t_s$} \\ \cline{3-4}
-                        \multicolumn{2}{|c|}{} & Taller & Tutoría \\ \hline
-                        \multirow{7}{*}{$c$} & Matemática I & $\frac{9}{71}$ & $\frac{12}{76}$ \\ \cline{2-4}
-                        & Matemática II & $\frac{5}{71}$ & $\frac{3}{76}$  \\ \cline{2-4}
-                        & Cálculo I & $\frac{22}{71}$ & $\frac{9}{76}$  \\ \cline{2-4}
-                        & Cálculo II & $\frac{12}{71}$ & $\frac{5}{76}$  \\ \cline{2-4}
-                        & Estadística Descriptiva & $\frac{10}{71}$ & $\frac{24}{76}$  \\ \cline{2-4}
-                        & Geometría & $\frac{10}{71}$ & $\frac{16}{76}$  \\ \cline{2-4}
-                        & Matemática para Medicina & $\frac{3}{71}$ & $\frac{7}{76}$  \\ \hline
-                    \end{tabular}                    
-                    \caption{Aproximación de la distribución de $C$ dado $T_\mathcal{S}$}
-                    \label{tab:distribucion_C_Ts}
-                \end{table}
-            \section{Alumnos inscritos}
-                Como sabemos, $\mathcal{I}$ representa la variable aleatoria número de alumnos inscritos en una sesión y mediante \ref{Inscritos-Asistentes Montecarlo} se puede obtener su distribución aproximada, o también mediante \ref{prob total condicional cursos}.
+            \newpage
+            \section{Alumnos inscritos}                
                 
                 El siguiente gráfico muestra el histograma del número de alumnos inscritos en todas las sesiones, es decir el conteo sobre los valores posibles de $I_s$ para todos los $s\in\mathcal{S}$. Además, como esta variable es de tipo numérica discreta consideramos lo siguiente al realizar la gráfica:
                 \begin{itemize}
                     \item No se agrupan los valores de $I_s$ en intervalos.
                     \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
                 \end{itemize}
-                Incluso si los talleres solo permiten un máximo de $100$ alumnos, se observa que existe un único valor dentro de \textit{MeetingsCleanInfo} con $I_s>100$. El fenómeno no podría explicarse a detalle pero se hace el supuesto de que se sucede debido al cómo la plataforma donde los alumnos realizan sus inscripciones regristra los datos. Sin embargo, al tratarse de un único valor este no es tan relevante como para ser excluido de la muestra ya que podemos `ignorar' que el límite de $100$ inscripciones existe.
+                
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=1\textwidth]{Sources/histograma_InscritosGlobal.png}
-                    \caption{Histograma de inscritos}
+                    \caption{Histograma de inscritos (\textsc{Power BI})}
                     \label{fig:histograma_InscritosGlobal}
                 \end{figure}
-                Lo que es bastante claro de apreciar es que los valores de $I_s$ más frecuentes tienden a ser los que tienen valores más pequeños pero con una alta dispersión. Es decir, el conteo de alumnos inscritos es bastante concentrado en un pequeño rango de valores.
+            
+            \newpage
             \section{Alumnos participantes}
-                Como sabemos, $\mathcal{A}$ representa la variable aleatoria número de alumnos participantes o asistentes en una sesión y mediante \ref{Inscritos-Asistentes Montecarlo} se puede obtener su distribución aproximada, o también mediante \ref{prob total condicional cursos}.
-                
                 El siguiente gráfico muestra el histograma del número de alumnos participantes en todas las sesiones, es decir el conteo sobre los valores posibles de $A_s$ para todos los $s\in\mathcal{S}$. Además, como esta variable es de tipo numérica discreta consideramos lo siguiente al realizar la gráfica (al igual que para la Figura \ref{fig:histograma_InscritosGlobal}):
                 \begin{itemize}
                     \item No se agrupan los valores de $I_s$ en intervalos.
                     \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
                 \end{itemize}
-                En este caso aparentemente no se observan valores atípicos visibles (a diferencia de lo mostrado en la Figura \ref{fig:histograma_InscritosGlobal}).
+                
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=1\textwidth]{Sources/histograma_ParticipantesGlobal.png}
-                    \caption{Histograma de participantes}
+                    \caption{Histograma de participantes (\textsc{Power BI})}
                     \label{fig:histograma_ParticipantesGlobal}
                 \end{figure}
-                Lo que sí es apreciable es que la tendencia en la distribución de $A_s$ es bastante similar a la de $I_s$.
-            \section{Inscritos-Participantes}
+                
+            \newpage
+            \section{Duración de sesiones}
+                La columna \textbf{Duración (minutos)}, o de forma simplificada \textbf{Duración}, no se encuentra originalmente en \textit{MeetingsClean} sino que se añade a la misma apareciendo en \textit{MeetingsCleanInfo}.
+                
+                Esta columna contiene la diferencia (en minutos) de la hora fin la hora de inicio de la sesión en su correspondiente fila, por lo que podemos decir que 
+                \begin{equation*}
+                    \textup{\textbf{Duración}}:=\textup{\textbf{Hora Fin}}-\textup{\textbf{Hora Inicio}}
+                \end{equation*}
+                
+                Además, como esta variable es de tipo numérica continua consideramos lo siguiente al realizar la gráficas:
+                \begin{itemize}
+                    \item Se agrupan los valores de $I_s$ en intervalos de $8\,\textup{min}$.
+                    \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
+                \end{itemize}
+                Más adelante se explica el motivo de la elección de estas consideraciones.
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=1\textwidth]{Sources/histograma_DuracionGlobal.png}
+                    \caption{Histograma de la duración de las sesiones (\textsc{Power BI})}
+                    \label{fig:histograma_DuracionGlobal}
+                \end{figure}
+
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=1\textwidth]{Sources/histograma_DuracionTaller.png}
+                    \caption{Histograma de la duración de las sesiones en talleres (\textsc{Power BI})}
+                    \label{fig:histograma_DuracionTaller}
+                \end{figure}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=1\textwidth]{Sources/histograma_DuracionTutoria.png}
+                    \caption{Histograma de la duración de las sesiones en tutorías (\textsc{Power BI})}
+                    \label{fig:histograma_DuracionTutoria}
+                \end{figure}
+            \section{Puntualidad}
+                La columna \textbf{Puntualidad (minutos)}, o de forma simplificada \textbf{Puntualidad}, no se encuentra originalmente en \textit{MeetingsClean} sino que se añade a la misma apareciendo en \textit{MeetingsCleanInfo}.
+                
+                Esta columna contiene la diferencia (en minutos) de la hora programada y la hora de inicio de la sesión en su correspondiente fila, por lo que podemos decir que 
+                \begin{equation*}
+                    \textup{\textbf{Puntualidad}}:=\textup{\textbf{Hora}}-\textup{\textbf{Hora Inicio}}
+                \end{equation*}
+                Además, como esta variable es de tipo numérica continua consideramos lo siguiente al realizar la gráficas:
+                \begin{itemize}
+                    \item Se agrupan los valores de $\textup{\textbf{Puntualidad}}$ en intervalos de $1\,\textup{min}$.
+                    \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
+                \end{itemize}
+                Más adelante se explica el motivo de la elección de estas consideraciones.
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=1\textwidth]{Sources/histograma_PuntualidadGlobal.png}
+                    \caption{Histograma de la puntualidad (\textsc{Power BI})}
+                    \label{fig:histograma_PuntualidadGlobal}
+                \end{figure}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=1\textwidth]{Sources/histograma_PuntualidadTaller.png}
+                    \caption{Histograma de la puntualidad en talleres (\textsc{Power BI})}
+                    \label{fig:histograma_PuntualidadTaller}
+                \end{figure}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=1\textwidth]{Sources/histograma_PuntualidadTutoria.png}
+                    \caption{Histograma de la puntualidad en tutorías (\textsc{Power BI})}
+                    \label{fig:histograma_PuntualidadTutoria}
+                \end{figure}
+            \section{Extra: Correlación entre variables numéricas}
+                Un gráfico interesante en el que muestra los distintos gráficos de comparación entre pares de variables numéricas de una tabla es el \textit{pairplot} (\textsc{Python}), que resulta ser una matriz de gráficos en cuya diagonal se muestran histogramas y en el resto se muestran gráficos de dispersión. A continuación se muestra el \textit{pairplot} de las variables numéricas de \textit{MeetingsCleanInfo}.
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=1\textwidth]{Sources/pairplot_NumericalData.png}
+                    \caption{Pairplot de las variables numéricas (\textsc{Python})}
+                    \label{fig:pairplot_NumericalData}
+                \end{figure}
+    \chapter{Discusión}        
+        
+        \section{Tipo}
+            Aquí la variable aleatoria analizada es $T_\mathcal{S}$. Esta presenta dos posibles valores: $\text{Taller}$ o $\text{Tutoria}$, por lo que se trata de una variable categórica. Al existir dos posibles valores, se esperaría que la variable aleatoria $T_\mathcal{S}$ sea uniformemente distribuida, es decir,
+            \begin{equation}\label{uniforme tipo de sesion}
+                \Prob{T_\mathcal{S}=\text{Taller}}=\Prob{T_\mathcal{S}=\text{Tutoria}}=\frac{1}{2}
+            \end{equation}
+            De hecho, se puede comprobar ello mediante los datos obtenidos. El siguiente gráfico muestra un gráfico de barras obtenida a partir de \textit{MeetingsCleanInfo} que resume la aproximación obtenida de la distribución de las variables aleatorias $T_\mathcal{S}$.
+
+            Con ello formamos la tabla
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|}
+                    \hline
+                    $t_s$ & $\hat{\Probsymb}_{\mathcal{T}_\mathcal{S}}(t_s)$ \\ \hline
+                    Taller & $\frac{71}{147}$ \\ \hline
+                    Tutoria & $\frac{76}{147}$ \\ \hline
+                \end{tabular}
+                \caption{Aproximación de la distribución de $T_\mathcal{S}$}
+            \end{table}
+            Entonces, de acuerdo a lo planteado en \ref{uniforme tipo de sesion} y usando las aproximaciones planteadas en \ref{Otras variables aleatorias Montecarlo} se puede comprobar que la aproximación obtenida de la distribución de $T_\mathcal{S}$ es correcta pues de acuerdo a la gráfica de la Figura \ref{fig:histograma_TipoGlobal}.
+            \begin{equation}
+                \hat{\Probsymb}_{\mathcal{T}_\mathcal{S}}(\text{Taller}) = \frac{76}{147} \approx 0.517, \quad \hat{\Probsymb}_{\mathcal{T}_\mathcal{S}}(\text{Tutoria}) = \frac{71}{147} \approx 0.483
+            \end{equation}
+            Ahora, veamos qué sucede con la distribución de $T_\mathcal{S}$ para cada uno de los cursos, es decir, $T_\mathcal{S}$ dado $C$.
+
+            Dado que tratamos con pocos cursos, es decir $\card{\mathcal{C}}=7$, podemos mostrar en una tabla la aproximación obtenida de la distribución de $T_\mathcal{S}$ dado $C$.
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    \multicolumn{2}{|c|}{\multirow{2}{*}{$\hat{\Probsymb}_{C=c}(T_\mathcal{S}=t_s)$}} & \multicolumn{2}{c|}{$t_s$} \\ \cline{3-4}
+                    \multicolumn{2}{|c|}{} & Taller & Tutoría \\ \hline
+                    \multirow{7}{*}{$c$} & Matemática I & $\frac{9}{21}$ & $\frac{12}{21}$ \\ \cline{2-4}
+                    & Matemática II & $\frac{5}{8}$ & $\frac{3}{8}$  \\ \cline{2-4}
+                    & Cálculo I & $\frac{22}{31}$ & $\frac{9}{31}$  \\ \cline{2-4}
+                    & Cálculo II & $\frac{12}{17}$ & $\frac{5}{17}$  \\ \cline{2-4}
+                    & Estadística Descriptiva & $\frac{10}{34}$ & $\frac{24}{34}$  \\ \cline{2-4}
+                    & Geometría & $\frac{10}{26}$ & $\frac{16}{26}$  \\ \cline{2-4}
+                    & Matemática para Medicina & $\frac{3}{10}$ & $\frac{7}{10}$   \\ \hline
+                \end{tabular}
+                \caption{Aproximación de la distribución de $T_\mathcal{S}$ dado $C$}
+                \label{tab:distribucion_Ts_C}
+            \end{table}
+        \section{Curso}
+            Aquí la variable aleatoria analizada es $C$, del cual conocemos los posibles valores que toma ya que conocemos los elementos de $\mathcal{C}$ como se muestra en \ref{cursos dictados}. Por distintos motivos (como demanda) es muy posible que existan cursos con mayor o menor asignación, por lo que no se puede intuir la distribución de $C$.
+            
+            En la Figura \ref{fig:histograma_CursosGlobal} muestra un gráfico de barras obtenido a partir de \textit{MeetingsCleanInfo} que resume la aproximacion obtenida de la distribución de la variable aleatoria $C$. Con ello formamos la tabla
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|}
+                    \hline
+                    c & $\hat{\Probsymb}_{\mathcal{C}}(c)$ \\ \hline
+                    Matemática I & $\frac{21}{147}$ \\ \hline
+                    Matemática II & $\frac{8}{147}$ \\ \hline
+                    Cálculo I & $\frac{31}{147}$ \\ \hline
+                    Cálculo II & $\frac{17}{147}$ \\ \hline
+                    Estadística Descriptiva & $\frac{34}{147}$ \\ \hline
+                    Geometría & $\frac{26}{147}$ \\ \hline
+                    Matemática para Medicina & $\frac{10}{147}$ \\ \hline
+                \end{tabular}
+                \caption{Aproximación de la distribución de $C$}
+            \end{table}
+
+            En base a la Figura \ref{fig:histograma_TipoCurso}, mostramos la tabla de la aproximación de la distribución de $C$ dado $T_\mathcal{S}$. Se resalta el hecho de que $\card{\mathcal{S}\cap\{s\mid t_s=\text{Taller}\}}=76$ y $\card{\mathcal{S}\cap\{s\mid t_s=\text{Tutoria}\}}=71$ ya que estos valores aparecen en la parte superior de la Figura \ref{fig:histograma_TipoGlobal}.
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    \multicolumn{2}{|c|}{\multirow{2}{*}{$\hat{\Probsymb}_{T_\mathcal{S}=t_s}(C=c)$}} & \multicolumn{2}{c|}{$t_s$} \\ \cline{3-4}
+                    \multicolumn{2}{|c|}{} & Taller & Tutoría \\ \hline
+                    \multirow{7}{*}{$c$} & Matemática I & $\frac{9}{71}$ & $\frac{12}{76}$ \\ \cline{2-4}
+                    & Matemática II & $\frac{5}{71}$ & $\frac{3}{76}$  \\ \cline{2-4}
+                    & Cálculo I & $\frac{22}{71}$ & $\frac{9}{76}$  \\ \cline{2-4}
+                    & Cálculo II & $\frac{12}{71}$ & $\frac{5}{76}$  \\ \cline{2-4}
+                    & Estadística Descriptiva & $\frac{10}{71}$ & $\frac{24}{76}$  \\ \cline{2-4}
+                    & Geometría & $\frac{10}{71}$ & $\frac{16}{76}$  \\ \cline{2-4}
+                    & Matemática para Medicina & $\frac{3}{71}$ & $\frac{7}{76}$  \\ \hline
+                \end{tabular}                    
+                \caption{Aproximación de la distribución de $C$ dado $T_\mathcal{S}$}
+                \label{tab:distribucion_C_Ts}
+            \end{table}
+            \subsection{Matemática I}
+            \subsection{Matemática II}
+            \subsection{Cálculo I}
+            \subsection{Cálculo II}
+            \subsection{Estadística Descriptiva}
+            \subsection{Geometría}
+            \subsection{Matemática para Medicina}
+        \section{Inscritos y participantes}
+            \subsection{Inscritos}
+                Como sabemos, $\mathcal{I}$ representa la variable aleatoria número de alumnos inscritos en una sesión y mediante \ref{Inscritos-Asistentes Montecarlo} se puede obtener su distribución aproximada, o también mediante \ref{prob total condicional cursos}.
+
+                Incluso si los talleres solo permiten un máximo de $100$ alumnos, en la Figura \ref{fig:histograma_InscritosGlobal} se observa que existe un único valor dentro de \textit{MeetingsCleanInfo} con $I_s>100$. El fenómeno no podría explicarse a detalle pero se hace el supuesto de que se sucede debido al cómo la plataforma donde los alumnos realizan sus inscripciones regristra los datos. Sin embargo, al tratarse de un único valor este no es tan relevante como para ser excluido de la muestra ya que podemos `ignorar' que el límite de $100$ inscripciones existe.
+
+                Lo que es bastante claro de apreciar es que los valores de $I_s$ más frecuentes tienden a ser los que tienen valores más pequeños pero con una alta dispersión. Es decir, el conteo de alumnos inscritos es bastante concentrado en un pequeño rango de valores.
+            \subsection{Participantes}
+                Como sabemos, $\mathcal{A}$ representa la variable aleatoria número de alumnos participantes o asistentes en una sesión y mediante \ref{Inscritos-Asistentes Montecarlo} se puede obtener su distribución aproximada, o también mediante \ref{prob total condicional cursos}.
+
+                En este caso aparentemente no se observan valores atípicos visibles en la Figura \ref{fig:histograma_ParticipantesGlobal} (a diferencia de lo mostrado en la Figura \ref{fig:histograma_InscritosGlobal}). Lo que sí es apreciable es que la tendencia en la distribución de $A_s$ es bastante similar a la de $I_s$.
+            \subsection{Inscritos-Participantes}
                 La relación que tienen $\mathcal{I}$ y $\mathcal{A}$ parece tener algún tipo de dependencia. Como es usual con datos numéricos, se puede analizar los coeficientes de correlación (Pearson) entre los mismos. Mediante el uso de librerías de \textsc{Python} se puede obtener la matriz de correlación (Pearson) asociada.
                 \begin{figure}[H]
                     \centering
                     \includegraphics[width=0.7\textwidth]{Sources/corrmatrix_NumericalFeatures.png}
                     \caption{Correlación de las variables numéricas}
+                    \label{fig:corrmatrix_NumericalFeatures}
                 \end{figure}
                 Lo que muestra la matriz de correlación permitiría explicar el por qué de la similitud entre los histogramas de las variables aleatorias $I$ e $A$. El coeficiente de correlación entre ambas variables es muy próxima a $1$ lo que indica una alta correlación positiva, y además es el coeficiente de correlación más alto de todas las variables numéricas.
                 
@@ -829,6 +934,7 @@
                     \centering
                     \includegraphics[width=0.7\textwidth]{Sources/linearregression_InscritosParticipantes.png}
                     \caption{Regresión lineal de la variable aleatoria $\mathcal{I},\mathcal{A}$}
+                    \label{fig:linearregression_InscritosParticipantes}
                 \end{figure}
                 Entonces para $x\in\Real^+\cap\Integer$ representando el número de alumnos inscritos en una sesión (que es conocido antes de una sesión) tendríamos que $y=0.69x-0.643$, con un redondeo adecuado, representaría el número estimado de asistentes en la sesión.
 
@@ -839,86 +945,28 @@
                     \EV{A\mid I=n}\approx 0.69n-0.643
                 \end{equation*}
                 y deberíamos ser capaces de verificar que $A-0.69I+0.643\sim\varepsilon_I\sim\mathcal{N}(0,\sigma_I^2)$ mediante el contraste de hipótesis.
-            \section{Duración de sesiones}
-                La columna \textbf{Duración (minutos)} no se encuentra originalmente en \textit{MeetingsClean} sino que se añade a la misma apareciendo en \textit{MeetingsCleanInfo}. Esta columna contiene la diferencia (en minutos) de la hora fin la hora de inicio de la sesión en su correspondiente fila, por lo que podemos decir que 
-                \begin{equation*}
-                    \textup{\textbf{Duración}}:=\textup{\textbf{Hora Fin}}-\textup{\textbf{Hora Inicio}}
-                \end{equation*}
-                
-                Además, como esta variable es de tipo numérica continua consideramos lo siguiente al realizar la gráficas:
-                \begin{itemize}
-                    \item Se agrupan los valores de $I_s$ en intervalos de $8\,\textup{min}$.
-                    \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
-                \end{itemize}
-                El motivo de agrupar en intervalos de $8\,\textup{min}$ es porque si buscaramos partir en $9$ subintervalos los intervalos $[0;45]$ y $[0;90]$, los intervalos tendrían longitud $5\,\textup{min}$ y $10\,\textup{min}$ respectivamente, por lo que para evitar el tener que utilizar intervalos de longitud diferentes se toman intervalos que resulten del promedio aproximado de los mismos que es $7.5\,\textup{min}\approx8\,\textup{min}$.
+        \section{Duración de las sesiones}
+            El motivo de agrupar en intervalos de $8\,\textup{min}$ es porque si buscaramos partir en $9$ subintervalos los intervalos $[0;45]$ y $[0;90]$, los intervalos tendrían longitud $5\,\textup{min}$ y $10\,\textup{min}$ respectivamente, por lo que para evitar el tener que utilizar intervalos de longitud diferentes se toman intervalos que resulten del promedio aproximado de los mismos que es $7.5\,\textup{min}\approx8\,\textup{min}$.
 
-                En el comportamiento global de esta variable podría no ser apreciable algún comportamiento en particular.
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=1\textwidth]{Sources/histograma_DuracionGlobal.png}
-                    \caption{Histograma de la duración de las sesiones}
-                \end{figure}
-                Sin embargo, como ya se ha mencionado, según el tipo de sesión la duración máxima establecida de la misma es diferente. Es decir, $90\,\textup{min}$ para los talleres y $45\,\textup{min}$ para las tutorías. Por lo tanto, se espera que la mayor parte de los valores registrados en la columna \textbf{Duración (minutos)} estén mayoritariamente concentrados en $90$ y $45$ para los talleres y tutorías, respectivamente.
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=1\textwidth]{Sources/histograma_DuracionTaller.png}
-                    \caption{Histograma de la duración de las sesiones en talleres}
-                \end{figure}
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=1\textwidth]{Sources/histograma_DuracionTutoria.png}
-                    \caption{Histograma de la duración de las sesiones en tutorías}
-                \end{figure}
-            \section{Puntualidad}
-                La columna \textbf{Puntualidad (minutos)}, o de forma simplificada \textbf{Puntualidad}, no se encuentra originalmente en \textit{MeetingsClean} sino que se añade a la misma apareciendo en \textit{MeetingsCleanInfo}. Esta columna contiene la diferencia (en minutos) de la hora programada y la hora de inicio de la sesión en su correspondiente fila, por lo que podemos decir que 
-                \begin{equation*}
-                    \textup{\textbf{Puntualidad}}:=\textup{\textbf{Hora}}-\textup{\textbf{Hora Inicio}}
-                \end{equation*}
-                Además, como esta variable es de tipo numérica continua consideramos lo siguiente al realizar la gráficas:
-                \begin{itemize}
-                    \item Se agrupan los valores de $\textup{\textbf{Puntualidad}}$ en intervalos de $1\,\textup{min}$.
-                    \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
-                \end{itemize}
-                
-                Dado que el reglamento de la \textit{Universidad Tecnológica del Perú} indica que, tanto para talleres como para tutorías, la hora de ingreso a la sesión debe ser entre $5$ y $10$ minutos antes de la hora programada, entonces se esperaría que los valores registrados en la columna \textbf{Puntualidad (minutos)} se encuentren mayoritariamente concentrados en el intervalo $\mathopen[5;10\mathclose]$.
-                
-                Sin embargo, también debemos tener en cuenta que podrían presentarse valores atípicos, pues como ya se mencionó \textit{Zoom} registra que una sesión ha sido iniciada si es que existe algún integrante en la sesión e independiente de si se trata del anfitrión (mi persona) o no.
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=0.7\textwidth]{Sources/histogram_Puntualidad.png}
-                    \caption{Histograma de la puntualidad (\textsc{Python})}
-                \end{figure}
-                En efecto, los valores atípicos se aparecen y estos son los valores de \textbf{Puntualidad} más altos. Esto podría explicarse mediante el hecho de que algún estudiante ingresó a la sesión minutos muy antes de la hora programada y permaneció hasta la hora en que el anfitrión ingresó.
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=1\textwidth]{Sources/histograma_PuntualidadGlobal.png}
-                    \caption{Histograma de la puntualidad (\textsc{Power BI})}
-                \end{figure}
-                El comportamiento global es muy similar al observado al comportamiento en talleres y tutorías.
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=1\textwidth]{Sources/histograma_PuntualidadTaller.png}
-                    \caption{Histograma de la puntualidad en talleres}
-                \end{figure}
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=1\textwidth]{Sources/histograma_PuntualidadTutoria.png}
-                    \caption{Histograma de la puntualidad en tutorías}
-                \end{figure}
-                Esto tiene sentido, pues, debido a que la puntualidad es indistinta al tipo de sesión.
-    \chapter{Discusión}        
-        \section{Por curso}
-            \subsection{Matemática I}
-            \subsection{Matemática II}
-            \subsection{Cálculo I}
-            \subsection{Cálculo II}
-            \subsection{Estadística Descriptiva}
-            \subsection{Geometría}
-        \section{Por tipo}
-            \subsection{Talleres}
-            \subsection{Tutorías}
-        \section{Por fecha y hora}
+            En el comportamiento global de esta variable podría no ser apreciable algún comportamiento en particular.
+
+            Sin embargo, como ya se ha mencionado, según el tipo de sesión la duración máxima establecida de la misma es diferente. Es decir, $90\,\textup{min}$ para los talleres y $45\,\textup{min}$ para las tutorías. Por lo tanto, se espera que la mayor parte de los valores registrados en la columna \textbf{Duración (minutos)} estén mayoritariamente concentrados en $90$ y $45$ para los talleres y tutorías, respectivamente.
         
+        \section{Puntualidad}
+            Dado que el reglamento de la \textit{Universidad Tecnológica del Perú} indica que, tanto para talleres como para tutorías, la hora de ingreso a la sesión debe ser entre $5$ y $10$ minutos antes de la hora programada, entonces se esperaría que los valores registrados en la columna \textbf{Puntualidad (minutos)} se encuentren mayoritariamente concentrados en el intervalo $\mathopen[5;10\mathclose]$.
+            
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.7\textwidth]{Sources/histogram_Puntualidad.png}
+                \caption{Histograma de la puntualidad (\textsc{Python})}
+                \label{fig:histogram_Puntualidad}
+            \end{figure}
+            Sin embargo, también debemos tener en cuenta que podrían presentarse valores atípicos, pues como ya se mencionó \textit{Zoom} registra que una sesión ha sido iniciada si es que existe algún integrante en la sesión e independiente de si se trata del anfitrión (mi persona) o no.
+
+            En efecto, los valores atípicos se aparecen y estos son los valores de \textbf{Puntualidad} más altos. Esto podría explicarse mediante el hecho de que algún estudiante ingresó a la sesión minutos muy antes de la hora programada y permaneció hasta la hora en que el anfitrión ingresó.
+
+            Además, el comportamiento global es muy similar al observado al comportamiento en talleres y tutorías. Esto tiene sentido, pues, debido a que la puntualidad es indistinta al tipo de sesión.
+    
     \chapter{Conclusiones}
         Distribución del número de inscritos (Por curso y global: el número global es la suma de los números por curso (variables aleatorias))
         \begin{enumerate}
