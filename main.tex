@@ -980,8 +980,14 @@
                 \begin{equation*}
                     \EV{A\mid I=n}\approx 0.69n-0.643
                 \end{equation*}
-                y deberíamos ser capaces de verificar que $A-0.69I+0.643\sim\varepsilon_I\sim\mathcal{N}(0,\sigma_I^2)$ mediante el contraste de hipótesis.
-
+                y deberíamos ser capaces de verificar que $A-0.69I+0.643\sim\varepsilon_I\sim\mathcal{N}(0,\sigma_I^2)$ mediante el contraste de hipótesis de heterocedasticidad.
+ 
+                Por otro lado, al observar las ecuaciones de las rectas de regresión en la Figura \ref{fig:linearregression_InscritosParticipantesCursos} podemos ver que estos comportamientos son bastante similares, principalemente en el sentido de la pendiente. Si promediamos las pendientes $\beta_i$ de las rectas obtenidas por curso obtenemos
+                \begin{equation*}
+                    \hat{\beta}=\frac{1}{7}\sum_{i=1}^{7}\beta_i=\frac{0.727+0.707+0.710+0.677+0.514+0.696+0.409}{7}=\frac{4.44}{7}\approx0.634
+                \end{equation*}
+                y el error relativo de la pendiente $\beta$ a $\hat{\beta}$ de la muestra total es $8.07\%$, lo cual es pequeño.
+                Esto podría indicar que, de manera aproximada, existe una independencia entre las variables aleatorias $(\mathcal{I},\mathcal{A})$ y $C$.
         \section{Duración de las sesiones}
             El motivo de agrupar en intervalos de $8\,\textup{min}$ es porque si buscaramos partir en $9$ subintervalos los intervalos $[0;45]$ y $[0;90]$, los intervalos tendrían longitud $5\,\textup{min}$ y $10\,\textup{min}$ respectivamente, por lo que para evitar el tener que utilizar intervalos de longitud diferentes se toman intervalos que resulten del promedio aproximado de los mismos que es $7.5\,\textup{min}\approx8\,\textup{min}$.
 
@@ -995,9 +1001,12 @@
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=0.7\textwidth]{Sources/histogram_Puntualidad.png}
-                \caption{Histograma de la puntualidad (\textsc{Python})}
+                \caption{Histograma de la puntualidad (\textsc{Python})..}
                 \label{fig:histogram_Puntualidad}
             \end{figure}
+
+            La Figura \ref{fig:histogram_Puntualidad} muestra un histograma de la variable aleatoria \textbf{Puntualidad} con curvas que estiman la distribución. En la línea en rojo muestra la función de desnsidad de una variable aleatoria normal con media y desviación estándar de la muestra en \textbf{Puntualidad} (Figura \ref{fig:histograma_PuntualidadGlobal}). Por otro lado, en la linea en celeste muestra la distribución aproximada usando \textit{KDE} (Kernel Density Estimation).
+
             Sin embargo, también debemos tener en cuenta que podrían presentarse valores atípicos, pues como ya se mencionó \textit{Zoom} registra que una sesión ha sido iniciada si es que existe algún integrante en la sesión e independiente de si se trata del anfitrión (mi persona) o no.
 
             En efecto, los valores atípicos se aparecen y estos son los valores de \textbf{Puntualidad} más altos. Esto podría explicarse mediante el hecho de que algún estudiante ingresó a la sesión minutos muy antes de la hora programada y permaneció hasta la hora en que el anfitrión ingresó.
@@ -1108,6 +1117,27 @@
                 \end{equation*}
             \end{definicion}
 
+            \begin{definicion}[Nivel de significación]
+                Sea un estadístico $s$ en un contraste de hipótesis con hipótesis nula $H_0$. Sea $Z$ normal estándar, decimos que $\alpha\in [0;1]$ es un nivel de significación en los siguientes casos:
+                \begin{itemize}
+                    \item \textbf{Cola izquierda:} $\alpha=\Prob{Z \leq z_{\alpha}}$ o $1-\alpha=\Prob{Z > z_{\alpha}}$. Si 
+                            \begin{itemize}
+                                \item $s\geq z_{\alpha}$ entonces se acepta $H_0$.
+                                \item $s<z_{\alpha}$ entonces se rechaza $H_0$.
+                            \end{itemize}
+                    \item \textbf{Cola derecha:} $\alpha=\Prob{Z > z_{\alpha}}$ o $1-\alpha=\Prob{Z \leq z_{\alpha}}$.
+                            \begin{itemize}
+                                \item $s\leq z_{\alpha}$ entonces se acepta $H_0$.
+                                \item $s>z_{\alpha}$ entonces se rechaza $H_0$.
+                            \end{itemize}
+                    \item \textbf{Dos colas:} $\alpha=\Prob{|Z| > z_{\frac{\alpha}{2}}}$ o $1-\alpha=\Prob{|Z| \leq z_{\frac{\alpha}{2}}}$.
+                            \begin{itemize}
+                                \item $|s|\leq z_{\frac{\alpha}{2}}$ entonces se acepta $H_0$.
+                                \item $|s|>z_{\frac{\alpha}{2}}$ entonces se rechaza $H_0$.
+                            \end{itemize}
+                \end{itemize}
+                En todos los casos $z_{\alpha}$ es el cuantil normal de nivel $1-\alpha$. Cuando $\alpha=0.05$, entonces $z_{0.05}\approx1.96$.
+            \end{definicion}
             \begin{definicion}[Contraste de hipótesis]
                 Es un método estadístico que permite decidir si un conjunto de datos provee de suficiente evidencia para rechazar o no una hipótesis. La hipótesis puede ser de dos tipos: hipótesis nula ($H_0$) e hipótesis alternativa ($H_1$). La hipótesis nula es la que se aceptará o rechazará según algún tipo de test estadístico.
             \end{definicion}
@@ -1163,6 +1193,11 @@
                         
                         \item $V$ es la matriz de covarianza los estadísticos de orden normales, es decir, $$V=\textup{cov}\left(x_{(1)},\dots,x_{(n)}\right)$$
                     \end{itemize}
+                Luego, para un nivel de significación \(\alpha\),
+                \begin{itemize}
+                    \item Si \(W < z_{\alpha}\), se rechaza $H_{0}$.
+                    \item Si \(W \geq z_{\alpha}\), no se rechaza (o se acepta que se tiene suficiente evidencia) $H_{0}$.
+                \end{itemize}
             \end{ejemplo}
             \begin{definicion}[Kurtosis]
                 Sea $X$ una variable aleatoria con media $\mu$ y varianza $\sigma^2$. La \textbf{kurtosis} de $X$ se define como

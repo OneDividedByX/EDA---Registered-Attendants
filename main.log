@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.10)  28 SEP 2025 20:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.10)  28 SEP 2025 22:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1655,61 +1655,68 @@ Package pdftex.def Info: Sources/corrmatrix_NumericalFeatures.png  used on input
 LaTeX Info: Redefining \. on input line 978.
 LaTeX Info: Redefining \% on input line 978.
  [42 <./Sources/corrmatrix_NumericalFeatures.png>]
-<Sources/histogram_Puntualidad.png, id=594, 409.7709pt x 327.3831pt>
-File: Sources/histogram_Puntualidad.png Graphic file (type png)
-<use Sources/histogram_Puntualidad.png>
-Package pdftex.def Info: Sources/histogram_Puntualidad.png  used on input line 997.
-(pdftex.def)             Requested size: 318.66948pt x 254.60846pt.
-
-Underfull \vbox (badness 6396) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 1001.
-LaTeX Info: Redefining \% on input line 1001.
+LaTeX Info: Redefining \. on input line 1000.
+LaTeX Info: Redefining \% on input line 1000.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1001.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1000.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [43]
-LaTeX Info: Redefining \. on input line 1007.
-LaTeX Info: Redefining \% on input line 1007.
+<Sources/histogram_Puntualidad.png, id=599, 409.7709pt x 327.3831pt>
+File: Sources/histogram_Puntualidad.png Graphic file (type png)
+<use Sources/histogram_Puntualidad.png>
+Package pdftex.def Info: Sources/histogram_Puntualidad.png  used on input line 1003.
+(pdftex.def)             Requested size: 318.66948pt x 254.60846pt.
+LaTeX Info: Redefining \. on input line 1016.
+LaTeX Info: Redefining \% on input line 1016.
  [44 <./Sources/histogram_Puntualidad.png>]
 Cap\'{\i }tulo 6.
 [45
 
 ]
-LaTeX Info: Redefining \. on input line 1015.
-LaTeX Info: Redefining \% on input line 1015.
+LaTeX Info: Redefining \. on input line 1024.
+LaTeX Info: Redefining \% on input line 1024.
  [46
 
 ]
 Cap\'{\i }tulo 7.
 [47]
-LaTeX Info: Redefining \. on input line 1094.
-LaTeX Info: Redefining \% on input line 1094.
+LaTeX Info: Redefining \. on input line 1103.
+LaTeX Info: Redefining \% on input line 1103.
  [48]
-LaTeX Info: Redefining \. on input line 1143.
-LaTeX Info: Redefining \% on input line 1143.
+LaTeX Info: Redefining \. on input line 1151.
+LaTeX Info: Redefining \% on input line 1151.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1143.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1151.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [49]
-LaTeX Info: Redefining \. on input line 1186.
-LaTeX Info: Redefining \% on input line 1186.
+LaTeX Info: Redefining \. on input line 1194.
+LaTeX Info: Redefining \% on input line 1194.
  [50]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1186.
+LaTeX Info: Redefining \. on input line 1221.
+LaTeX Info: Redefining \% on input line 1221.
+File: bg/Uni-logo_transparente.png Graphic file (type png)
+<use bg/Uni-logo_transparente.png>
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1221.
+(pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
+ [51]
+LaTeX Info: Redefining \. on input line 1221.
+LaTeX Info: Redefining \% on input line 1221.
+ [52
+
+]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1221.
  (c:/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 3635) in paragraph at lines 1187--1187
+Underfull \hbox (badness 3635) in paragraph at lines 1222--1222
 \T1/cmtt/m/n/10.95 utstat . toronto . edu / ~brunner / oldclass / appliedf11 / handouts /
  []
 
 
 AED: lastpage setting LastPage
-[51
-
-] (./main.aux
+[53] (./main.aux
 LaTeX Info: Redefining \sptext on input line 30.
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
@@ -1724,18 +1731,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40108 strings out of 478599
- 771274 string characters out of 5858101
- 1540191 words of memory out of 5000000
+ 40111 strings out of 478599
+ 771302 string characters out of 5858101
+ 1540193 words of memory out of 5000000
  56903 multiletter control sequences out of 15000+600000
  434498 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  132i,17n,136p,1203b,2271s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (52 pages, 2137154 bytes).
+Output written on main.pdf (54 pages, 2143249 bytes).
 PDF statistics:
- 857 PDF objects out of 1000 (max. 8388607)
- 667 compressed objects within 7 object streams
- 213 named destinations out of 1000 (max. 500000)
+ 869 PDF objects out of 1000 (max. 8388607)
+ 677 compressed objects within 7 object streams
+ 216 named destinations out of 1000 (max. 500000)
  590 words of extra memory for PDF output out of 10000 (max. 10000000)
 
