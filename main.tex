@@ -980,7 +980,7 @@
                 \begin{equation*}
                     \EV{A\mid I=n}\approx 0.69n-0.643
                 \end{equation*}
-                y deberíamos ser capaces de verificar que $A-0.69I+0.643\sim\varepsilon_I\sim\mathcal{N}(0,\sigma_I^2)$ mediante el contraste de hipótesis de heterocedasticidad.
+                y deberíamos ser capaces de verificar que $A-0.69I+0.643\sim\varepsilon_I\sim\mathcal{N}(0,\sigma_I^2)$ mediante el contraste de hipótesis de Saphiro-Wilk (Ejemplo \ref{shapiro wilk}).
  
                 Por otro lado, al observar las ecuaciones de las rectas de regresión en la Figura \ref{fig:linearregression_InscritosParticipantesCursos} podemos ver que estos comportamientos son bastante similares, principalemente en el sentido de la pendiente. Si promediamos las pendientes $\beta_i$ de las rectas obtenidas por curso obtenemos
                 \begin{equation*}
@@ -1118,7 +1118,13 @@
             \end{definicion}
 
             \begin{definicion}[Nivel de significación]
-                Sea un estadístico $s$ en un contraste de hipótesis con hipótesis nula $H_0$. Sea $Z$ normal estándar, decimos que $\alpha\in [0;1]$ es un nivel de significación en los siguientes casos:
+                Sea un estadístico $s$ en un contraste de hipótesis con hipótesis nula $H_0$. En general, decimos que $\alpha\in [0;1]$ es un nivel de significación si siendo $p_s$ el $p$-valor del estadístico $s$, entonces:
+                \begin{itemize}
+                    \item Se acepta $H_0$ si $p_s\geq\alpha$.
+                    \item Se rechaza $H_0$ si $p_s<\alpha$.
+                \end{itemize}
+                
+                En paticular, sea $Z$ normal estándar, decimos que $\alpha\in [0;1]$ es un nivel de significación en los siguientes casos:
                 \begin{itemize}
                     \item \textbf{Cola izquierda:} $\alpha=\Prob{Z \leq z_{\alpha}}$ o $1-\alpha=\Prob{Z > z_{\alpha}}$. Si 
                             \begin{itemize}
@@ -1136,7 +1142,7 @@
                                 \item $|s|>z_{\frac{\alpha}{2}}$ entonces se rechaza $H_0$.
                             \end{itemize}
                 \end{itemize}
-                En todos los casos $z_{\alpha}$ es el cuantil normal de nivel $1-\alpha$. Cuando $\alpha=0.05$, entonces $z_{0.05}\approx1.96$.
+                En todos los casos $z_{\alpha}$ es el cuantil normal de nivel $1-\alpha$. Cuando $\alpha=0.05$, entonces $z_{0.05}\approx-1.65$ en la cola izquierda y $z_{0.05}\approx1.65$ en la cola derecha.
             \end{definicion}
             \begin{definicion}[Contraste de hipótesis]
                 Es un método estadístico que permite decidir si un conjunto de datos provee de suficiente evidencia para rechazar o no una hipótesis. La hipótesis puede ser de dos tipos: hipótesis nula ($H_0$) e hipótesis alternativa ($H_1$). La hipótesis nula es la que se aceptará o rechazará según algún tipo de test estadístico.
@@ -1163,7 +1169,7 @@
                     \item Si \(\abs{z_{c}} \leq z_{\alpha/2}\), no se rechaza (o se acepta que se tiene suficiente evidencia) $H_{0}$.
                 \end{itemize}
             \end{ejemplo}
-            \begin{ejemplo}[Contraste de normalidad (Shapiro-Wilk)]
+            \begin{ejemplo}[Contraste de normalidad (Shapiro-Wilk)]\label{shapiro wilk}
                 Sea una muestra \(x_{1}, x_{2}, \ldots, x_{n}\) y supongamos las hipótesis:
                 \[
                 \begin{split}
@@ -1193,10 +1199,10 @@
                         
                         \item $V$ es la matriz de covarianza los estadísticos de orden normales, es decir, $$V=\textup{cov}\left(x_{(1)},\dots,x_{(n)}\right)$$
                     \end{itemize}
-                Luego, para un nivel de significación \(\alpha\),
+                Luego, para un nivel de significación \(\alpha\), si $p_W$ es el $p$-valor del estadístico \(W\), entonces
                 \begin{itemize}
-                    \item Si \(W < z_{\alpha}\), se rechaza $H_{0}$.
-                    \item Si \(W \geq z_{\alpha}\), no se rechaza (o se acepta que se tiene suficiente evidencia) $H_{0}$.
+                    \item Si \(p_W < \alpha\), se rechaza $H_{0}$.
+                    \item Si \(p_W \geq \alpha\), no se rechaza (o se acepta que se tiene suficiente evidencia) $H_{0}$.
                 \end{itemize}
             \end{ejemplo}
             \begin{definicion}[Kurtosis]

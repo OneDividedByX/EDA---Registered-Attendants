@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.10)  28 SEP 2025 22:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.10)  29 SEP 2025 12:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1662,7 +1662,7 @@ File: bg/Uni-logo_transparente.png Graphic file (type png)
 Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1000.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [43]
-<Sources/histogram_Puntualidad.png, id=599, 409.7709pt x 327.3831pt>
+<Sources/histogram_Puntualidad.png, id=601, 409.7709pt x 327.3831pt>
 File: Sources/histogram_Puntualidad.png Graphic file (type png)
 <use Sources/histogram_Puntualidad.png>
 Package pdftex.def Info: Sources/histogram_Puntualidad.png  used on input line 1003.
@@ -1684,33 +1684,33 @@ Cap\'{\i }tulo 7.
 LaTeX Info: Redefining \. on input line 1103.
 LaTeX Info: Redefining \% on input line 1103.
  [48]
-LaTeX Info: Redefining \. on input line 1151.
-LaTeX Info: Redefining \% on input line 1151.
+LaTeX Info: Redefining \. on input line 1149.
+LaTeX Info: Redefining \% on input line 1149.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1151.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1149.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [49]
-LaTeX Info: Redefining \. on input line 1194.
-LaTeX Info: Redefining \% on input line 1194.
+LaTeX Info: Redefining \. on input line 1199.
+LaTeX Info: Redefining \% on input line 1199.
  [50]
-LaTeX Info: Redefining \. on input line 1221.
-LaTeX Info: Redefining \% on input line 1221.
+LaTeX Info: Redefining \. on input line 1227.
+LaTeX Info: Redefining \% on input line 1227.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1221.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1227.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [51]
-LaTeX Info: Redefining \. on input line 1221.
-LaTeX Info: Redefining \% on input line 1221.
+LaTeX Info: Redefining \. on input line 1227.
+LaTeX Info: Redefining \% on input line 1227.
  [52
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1221.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1227.
  (c:/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 3635) in paragraph at lines 1222--1222
+Underfull \hbox (badness 3635) in paragraph at lines 1228--1228
 \T1/cmtt/m/n/10.95 utstat . toronto . edu / ~brunner / oldclass / appliedf11 / handouts /
  []
 
@@ -1731,18 +1731,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40111 strings out of 478599
- 771302 string characters out of 5858101
- 1540193 words of memory out of 5000000
- 56903 multiletter control sequences out of 15000+600000
+ 40112 strings out of 478599
+ 771316 string characters out of 5858101
+ 1540263 words of memory out of 5000000
+ 56904 multiletter control sequences out of 15000+600000
  434498 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  132i,17n,136p,1203b,2271s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (54 pages, 2143249 bytes).
+Output written on main.pdf (54 pages, 2144282 bytes).
 PDF statistics:
- 869 PDF objects out of 1000 (max. 8388607)
- 677 compressed objects within 7 object streams
+ 870 PDF objects out of 1000 (max. 8388607)
+ 678 compressed objects within 7 object streams
  216 named destinations out of 1000 (max. 500000)
  590 words of extra memory for PDF output out of 10000 (max. 10000000)
 
