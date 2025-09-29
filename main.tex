@@ -90,7 +90,7 @@
 \pagestyle{fancy}
 \fancyhead{} 
 \setlength{\headheight}{30pt}
-\rhead[\textcolor{black}{\leftmark}]{\includegraphics[scale=0.02]{Carátula/Uni-logo_transparente.png}}
+\rhead[\textcolor{black}{\leftmark}]{\includegraphics[scale=0.02]{bg/Uni-logo_transparente.png}}
 \lhead[\textcolor{black}{UNI}]{\textcolor{black}{\rightmark}}
 \fancyfoot{}
 \lfoot[\textcolor{black}{\thepage}]{\textcolor{black}{Facultad De Ciencias}}
@@ -290,7 +290,7 @@
     \vspace{0.25cm}
         \begin{figure}[h!]
             \centering
-            \includegraphics[scale=0.15]{Carátula/Uni-logo_transparente.png}
+            \includegraphics[scale=0.15]{bg/Uni-logo_transparente.png}
         \end{figure}
     \vspace{0.1cm}
          {\huge \textbf{Informe de prácticas pre-profesionales}}\\
@@ -351,10 +351,10 @@
                 \begin{itemize}
                     \item Realizar un proceso ETL simple para analizar los datos de asistencia de alumnos a sesiones.
                     \item Mostrar gráficos de barras en relación a los cursos y tipos de sesiones dictadas.
-                    \item Determinar la distribución del número de alumnos inscritos a sesiones (análisis por curso y global).
-                    \item Determinar la distribución del número de alumnos asistentes a sesiones (análisis por curso y global).
-                    \item Determinar la relación entre el número de alumnos inscritos y el número de alumnos asistentes a sesiones (análisis por curso y global).
-                    \item Determinar la distribución del número de alumnos asistentes dado un número dado el número de alumnos asistentes (análisis por curso y global).
+                    \item Determinar la distribución del número de alumnos inscritos a sesiones (análisis por curso y tipo de sesión).
+                    \item Determinar la distribución del número de alumnos asistentes a sesiones (análisis por curso y tipo de sesión).
+                    \item Determinar la relación entre el número de alumnos inscritos y el número de alumnos asistentes a sesiones (análisis global y por curso).
+                    \item Determinar la distribución del número de alumnos asistentes dado un número dado el número de alumnos asistentes (análisis global y por curso).
                 \end{itemize}
         \chapter{Fundamento teórico}
             \section{Modelo matemático}
@@ -538,16 +538,16 @@
             Existen varios procedimientos para la recopilación de datos y tienen como objetivo obtener un conjunto de datos que refleje la situación de interés (limpio) y que pueda ser utilizado para el análisis.
             
             En particular, se muestra el procedimiento de recopilación de datos las sesiones dictadas en la \textit{Universidad Tecnológica del Perú} mediante  \textit{ETL} (Extracción-Transformación-Carga).
+            \newpage
             \section{Extracción}
                 Para concretar el análisis es necesario conocer los elementos de $\mathcal{S}$ (sesiones), es decir, contar con el conjunto de datos de interés. Por ello es necesario realizar la extracción de los datos.
                 
                 Desde la plataforma \cite{utp:reservas} es posible acceder al historial de todas las sesiones asignadas, detallando el curso, el tipo, la  fecha y hora y el número de alumnos inscritos de cada sesión (si se cuenta con acceso). Sin embargo, no es posible acceder al número de alumnos asistentes, por lo que se busca otra forma de extraer los datos. De hecho, incluso si estos últimos datos fueran accesibles desde esta plataforma aún se tendría un problema: no hay forma de exportar los datos.
     
-                Estos inconvenientes pueden ser fácilmente resueltos accediendo al historial de reuniones de \textit{Zoom}, ya que las sesiones virtuales se realizan en esta plataforma. Aquí es posible extraer los datos en múltiples archivos de formato $\mathsf{.csv}$ donde cada archivo contiene los datos de las sesiones en relación a un mes específico y además cierto tipo de información de la sesión.
-                
+                Estos inconvenientes pueden ser fácilmente resueltos accediendo al historial de reuniones de \textit{Zoom}, ya que las sesiones virtuales se realizan en esta plataforma. Aquí es posible extraer los datos en múltiples archivos de formato $\mathsf{.csv}$ donde cada archivo contiene los datos de las sesiones en relación a un mes específico y además cierto tipo de información de la sesión.                
                 \begin{figure}[H]
                     \centering
-                    \includegraphics[width=0.8\textwidth]{Sources/zoomReport.png}
+                    \includegraphics[width=0.7\textwidth]{Sources/zoomReport.png}
                     \caption{Fuente de extracción de los datos (apartado de reportes en \textit{Zoom}) \cite{zoom:reports}.}
                     \label{fig:zoomReport}
                 \end{figure}
@@ -705,37 +705,92 @@
                     \label{fig:histograma_CursosTutoría}
                 \end{figure}
             \newpage
-            \section{Alumnos inscritos}                
+            \section{Inscritos y participantes}
+                \subsection{Alumnos Inscritos}                
                 
-                El siguiente gráfico muestra el histograma del número de alumnos inscritos en todas las sesiones, es decir el conteo sobre los valores posibles de $I_s$ para todos los $s\in\mathcal{S}$. Además, como esta variable es de tipo numérica discreta consideramos lo siguiente al realizar la gráfica:
-                \begin{itemize}
-                    \item No se agrupan los valores de $I_s$ en intervalos.
-                    \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
-                \end{itemize}
-                
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=1\textwidth]{Sources/histograma_InscritosGlobal.png}
-                    \caption{Histograma de inscritos (\textsc{Power BI})}
-                    \label{fig:histograma_InscritosGlobal}
-                \end{figure}
-            
+                    El siguiente gráfico muestra el histograma del número de alumnos inscritos en todas las sesiones, es decir el conteo sobre los valores posibles de $I_s$ para todos los $s\in\mathcal{S}$. Además, como esta variable es de tipo numérica discreta consideramos lo siguiente al realizar la gráfica:
+                    \begin{itemize}
+                        \item No se agrupan los valores de $I_s$ en intervalos.
+                        \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
+                    \end{itemize}
+                    
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=1\textwidth]{Sources/histograma_InscritosGlobal.png}
+                        \caption{Histograma de inscritos (\textsc{Power BI})}
+                        \label{fig:histograma_InscritosGlobal}
+                    \end{figure}
+                    \newpage
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=1\textwidth]{Sources/histograma_InscritosTaller.png}
+                        \caption{Histograma de inscritos en talleres (\textsc{Power BI})}
+                        \label{fig:histograma_InscritosTaller}
+                    \end{figure}
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=1\textwidth]{Sources/histograma_InscritosTutoría.png}
+                        \caption{Histograma de inscritos en tutorías (\textsc{Power BI})}
+                        \label{fig:histograma_InscritosTutoría}
+                    \end{figure}
             \newpage
-            \section{Alumnos participantes}
-                El siguiente gráfico muestra el histograma del número de alumnos participantes en todas las sesiones, es decir el conteo sobre los valores posibles de $A_s$ para todos los $s\in\mathcal{S}$. Además, como esta variable es de tipo numérica discreta consideramos lo siguiente al realizar la gráfica (al igual que para la Figura \ref{fig:histograma_InscritosGlobal}):
-                \begin{itemize}
-                    \item No se agrupan los valores de $I_s$ en intervalos.
-                    \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
-                \end{itemize}
+                \subsection{Alumnos Participantes}
+                    El siguiente gráfico muestra el histograma del número de alumnos participantes en todas las sesiones, es decir el conteo sobre los valores posibles de $A_s$ para todos los $s\in\mathcal{S}$. Además, como esta variable es de tipo numérica discreta consideramos lo siguiente al realizar la gráfica (al igual que para la Figura \ref{fig:histograma_InscritosGlobal}):
+                    \begin{itemize}
+                        \item No se agrupan los valores de $I_s$ en intervalos.
+                        \item Se muestran los estadísticos de la media, desviación estándar, mediana y kurtosis.
+                    \end{itemize}
+                    
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=1\textwidth]{Sources/histograma_ParticipantesGlobal.png}
+                        \caption{Histograma de participantes (\textsc{Power BI})}
+                        \label{fig:histograma_ParticipantesGlobal}
+                    \end{figure}
+                    \newpage
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=1\textwidth]{Sources/histograma_ParticipantesTaller.png}
+                        \caption{Histograma de participantes en talleres (\textsc{Power BI})}
+                        \label{fig:histograma_ParticipantesTaller}
+                    \end{figure}
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=1\textwidth]{Sources/histograma_ParticipantesTutoría.png}
+                        \caption{Histograma de participantes en tutorías (\textsc{Power BI})}
+                        \label{fig:histograma_ParticipantesTutoría}
+                    \end{figure}
+                \subsection{Inscritos-Participantes}
+                    Algo más interesante resulta mostrar el gráfico de dispersión de $(\mathcal{I}_s,\mathcal{A}_s)$ para cada $s\in\mathcal{S}$ y visualizar la correlación de $I_s$ y $A_s$ para cada $s\in\mathcal{S}$.
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=1\textwidth]{Sources/dispersion_InscritosParticipantes.png}
+                        \caption{Dispersión de $(\mathcal{I}_s,\mathcal{A}_s)$ para cada $s\in\mathcal{S}$ (\textsc{Power BI})}
+                        \label{fig:dispersion_InscritosParticipantes}
+                    \end{figure}
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.6\textwidth]{Sources/linearregression_InscritosParticipantes.png}
+                        \caption{Regresión lineal de los $(\mathcal{I}_s,\mathcal{A}_s)$ (\textsc{Python})}
+                        \label{fig:linearregression_InscritosParticipantes}
+                    \end{figure}
+                    \begin{figure}[H]
+                        \centering
+                        \includegraphics[width=0.41\textwidth]{Sources/linearregression_InscritosParticipantesMatemáticaI.png}
+                        \includegraphics[width=0.41\textwidth]{Sources/linearregression_InscritosParticipantesMatemáticaII.png}
+                        \\[\smallskipamount]
+                        \includegraphics[width=0.41\textwidth]{Sources/linearregression_InscritosParticipantesCálculoI.png}
+                        \includegraphics[width=0.41\textwidth]{Sources/linearregression_InscritosParticipantesCálculoII.png}
+                        \\[\smallskipamount]
+                        \includegraphics[width=0.41\textwidth]{Sources/linearregression_InscritosParticipantesEstadistica.png}
+                        \includegraphics[width=0.41\textwidth]{Sources/linearregression_InscritosParticipantesGeometria.png}
+                        \\[\smallskipamount]
+                        \includegraphics[width=0.41\textwidth]{Sources/linearregression_InscritosParticipantesMatemáticaMed.png}\hfill
+                        \caption{Regresión lineal de los $(\mathcal{I}_s,\mathcal{A}_s)$ por curso (\textsc{Python})}
+                        \label{fig:linearregression_InscritosParticipantesCursos}
+                    \end{figure}
+                \newpage
                 
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=1\textwidth]{Sources/histograma_ParticipantesGlobal.png}
-                    \caption{Histograma de participantes (\textsc{Power BI})}
-                    \label{fig:histograma_ParticipantesGlobal}
-                \end{figure}
-                
-            \newpage
             \section{Duración de sesiones}
                 La columna \textbf{Duración (minutos)}, o de forma simplificada \textbf{Duración}, no se encuentra originalmente en \textit{MeetingsClean} sino que se añade a la misma apareciendo en \textit{MeetingsCleanInfo}.
                 
@@ -890,13 +945,6 @@
                 \caption{Aproximación de la distribución de $C$ dado $T_\mathcal{S}$}
                 \label{tab:distribucion_C_Ts}
             \end{table}
-            \subsection{Matemática I}
-            \subsection{Matemática II}
-            \subsection{Cálculo I}
-            \subsection{Cálculo II}
-            \subsection{Estadística Descriptiva}
-            \subsection{Geometría}
-            \subsection{Matemática para Medicina}
         \section{Inscritos y participantes}
             \subsection{Inscritos}
                 Como sabemos, $\mathcal{I}$ representa la variable aleatoria número de alumnos inscritos en una sesión y mediante \ref{Inscritos-Asistentes Montecarlo} se puede obtener su distribución aproximada, o también mediante \ref{prob total condicional cursos}.
@@ -918,25 +966,13 @@
                 \end{figure}
                 Lo que muestra la matriz de correlación permitiría explicar el por qué de la similitud entre los histogramas de las variables aleatorias $I$ e $A$. El coeficiente de correlación entre ambas variables es muy próxima a $1$ lo que indica una alta correlación positiva, y además es el coeficiente de correlación más alto de todas las variables numéricas.
                 
-                En el siguiente gráfico se muestra la dispersión de $(\mathcal{I}_s,\mathcal{A}_s)$ para $s\in\mathcal{S}$, es decir, los pares inscritos-participantes obtenidos a partir de \textit{MeetingsCleanInfo}.
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=1\textwidth]{Sources/dispersion_InscritosParticipantes.png}
-                    \caption{Dispersión de $(\mathcal{I}_s,\mathcal{A}_s)$ para cada $s\in\mathcal{S}$}
-                    \label{fig:dispersion_InscritosParticipantes}
-                \end{figure}
-                La región sombreada representa la región de pares inscritos-participantes que tiene un comportamiento `regular', es decir, que $\mathcal{I}_s\geq \mathcal{A}_s$ (ya que no es posible que alguien asista sin estar previamente inscrito, en teoría). En base a ello, sólo se contabilizan $10$ pares que no presentan el comportamiento `regular' y los consideramos como atípicos o `anómalos'.
+                En la Figura \ref{fig:dispersion_InscritosParticipantes} se muestra la dispersión de $(\mathcal{I}_s,\mathcal{A}_s)$ para $s\in\mathcal{S}$, es decir, los pares inscritos-participantes obtenidos a partir de \textit{MeetingsCleanInfo}.
+                
+                La región sombreada en la Figura \ref{fig:dispersion_InscritosParticipantes} representa la región de pares inscritos-participantes que tiene un comportamiento `regular', es decir, que $\mathcal{I}_s\geq \mathcal{A}_s$ (ya que no es posible que alguien asista sin estar previamente inscrito, en teoría). En base a ello, sólo se contabilizan $10$ pares que no presentan el comportamiento `regular' y los consideramos como atípicos o `anómalos'.
 
                 Por otro lado, dado que la correlación lineal entre $I$ y $A$ es bastante alta, podemos usar la regresión lineal para obtener una aproximación de la distribución de $A$ dado $I$. En la Figura \ref{fig:dispersion_InscritosParticipantes} se muestra la recta de regresión lineal en base a los datos obtenidos y aparece en forma de línea punteada. Sin embargo, como este gráfico fue elaborado en \textsc{Power BI}, este no se muestra con una ecuación explícita pero podemos encontrarla utilizando las librerías existentes en \textsc{Python}.
 
-                Así, la ecuación de la recta de regresión lineal obtenida se muestran en el siguiente gráfico.
-                \begin{figure}[H]
-                    \centering
-                    \includegraphics[width=0.7\textwidth]{Sources/linearregression_InscritosParticipantes.png}
-                    \caption{Regresión lineal de la variable aleatoria $\mathcal{I},\mathcal{A}$}
-                    \label{fig:linearregression_InscritosParticipantes}
-                \end{figure}
-                Entonces para $x\in\Real^+\cap\Integer$ representando el número de alumnos inscritos en una sesión (que es conocido antes de una sesión) tendríamos que $y=0.69x-0.643$, con un redondeo adecuado, representaría el número estimado de asistentes en la sesión.
+                Vamos a centrarnos en la ecuación de la recta de regresión lineal obtenida en la Figura \ref{fig:linearregression_InscritosParticipantes}. Entonces para $x\in\Real^+\cap\Integer$ representando el número de alumnos inscritos en una sesión (que es conocido antes de una sesión) tendríamos que $y=0.69x-0.643$, con un redondeo adecuado, representaría el número estimado de asistentes en la sesión.
 
                 Si bien esto muestra el comportamiento global del par inscritos-participantes se desconoce el comportamiento según el curso.
 
@@ -945,6 +981,7 @@
                     \EV{A\mid I=n}\approx 0.69n-0.643
                 \end{equation*}
                 y deberíamos ser capaces de verificar que $A-0.69I+0.643\sim\varepsilon_I\sim\mathcal{N}(0,\sigma_I^2)$ mediante el contraste de hipótesis.
+
         \section{Duración de las sesiones}
             El motivo de agrupar en intervalos de $8\,\textup{min}$ es porque si buscaramos partir en $9$ subintervalos los intervalos $[0;45]$ y $[0;90]$, los intervalos tendrían longitud $5\,\textup{min}$ y $10\,\textup{min}$ respectivamente, por lo que para evitar el tener que utilizar intervalos de longitud diferentes se toman intervalos que resulten del promedio aproximado de los mismos que es $7.5\,\textup{min}\approx8\,\textup{min}$.
 
