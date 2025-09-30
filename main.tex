@@ -351,10 +351,11 @@
                 \begin{itemize}
                     \item Realizar un proceso ETL simple para analizar los datos de asistencia de alumnos a sesiones.
                     \item Mostrar gráficos de barras en relación a los cursos y tipos de sesiones dictadas.
-                    \item Determinar la distribución del número de alumnos inscritos a sesiones (análisis por curso y tipo de sesión).
-                    \item Determinar la distribución del número de alumnos asistentes a sesiones (análisis por curso y tipo de sesión).
-                    \item Determinar la relación entre el número de alumnos inscritos y el número de alumnos asistentes a sesiones (análisis global y por curso).
-                    \item Determinar la distribución del número de alumnos asistentes dado un número dado el número de alumnos asistentes (análisis global y por curso).
+                    \item Determinar la distribución del número de alumnos inscritos a sesiones.
+                    \item Determinar la distribución del número de alumnos asistentes a sesiones.
+                    \item Determinar la relación entre el número de alumnos inscritos y el número de alumnos asistentes a sesiones.
+                    \item Determinar la distribución del número de alumnos asistentes dado un número dado el número de alumnos asistentes.
+                    \item Determinar la distribución de otras cantidades involucradas.
                 \end{itemize}
         \chapter{Fundamento teórico}
             \section{Modelo matemático}
@@ -953,9 +954,7 @@
 
                 Lo que es bastante claro de apreciar es que los valores de $I_s$ más frecuentes tienden a ser los que tienen valores más pequeños pero con una alta dispersión. Es decir, el conteo de alumnos inscritos es bastante concentrado en un pequeño rango de valores.
             \subsection{Participantes}
-                Como sabemos, $\mathcal{A}$ representa la variable aleatoria número de alumnos participantes o asistentes en una sesión y mediante \ref{Inscritos-Asistentes Montecarlo} se puede obtener su distribución aproximada, o también mediante \ref{prob total condicional cursos}.
-
-                En este caso aparentemente no se observan valores atípicos visibles en la Figura \ref{fig:histograma_ParticipantesGlobal} (a diferencia de lo mostrado en la Figura \ref{fig:histograma_InscritosGlobal}). Lo que sí es apreciable es que la tendencia en la distribución de $A_s$ es bastante similar a la de $I_s$.
+                Como sabemos, $\mathcal{A}$ representa la variable aleatoria número de alumnos participantes o asistentes en una sesión y mediante \ref{Inscritos-Asistentes Montecarlo} se puede obtener su distribución aproximada, o también mediante \ref{prob total condicional cursos}. En este caso aparentemente no se observan valores atípicos visibles en la Figura \ref{fig:histograma_ParticipantesGlobal} (a diferencia de lo mostrado en la Figura \ref{fig:histograma_InscritosGlobal}). Lo que sí es apreciable es que la tendencia en la distribución de $A_s$ es bastante similar a la de $I_s$.
             \subsection{Inscritos-Participantes}
                 La relación que tienen $\mathcal{I}$ y $\mathcal{A}$ parece tener algún tipo de dependencia. Como es usual con datos numéricos, se puede analizar los coeficientes de correlación (Pearson) entre los mismos. Mediante el uso de librerías de \textsc{Python} se puede obtener la matriz de correlación (Pearson) asociada.
                 \begin{figure}[H]
@@ -966,45 +965,65 @@
                 \end{figure}
                 Lo que muestra la matriz de correlación permitiría explicar el por qué de la similitud entre los histogramas de las variables aleatorias $I$ e $A$. El coeficiente de correlación entre ambas variables es muy próxima a $1$ lo que indica una alta correlación positiva, y además es el coeficiente de correlación más alto de todas las variables numéricas.
                 
-                En la Figura \ref{fig:dispersion_InscritosParticipantes} se muestra la dispersión de $(\mathcal{I}_s,\mathcal{A}_s)$ para $s\in\mathcal{S}$, es decir, los pares inscritos-participantes obtenidos a partir de \textit{MeetingsCleanInfo}.
-                
-                La región sombreada en la Figura \ref{fig:dispersion_InscritosParticipantes} representa la región de pares inscritos-participantes que tiene un comportamiento `regular', es decir, que $\mathcal{I}_s\geq \mathcal{A}_s$ (ya que no es posible que alguien asista sin estar previamente inscrito, en teoría). En base a ello, sólo se contabilizan $10$ pares que no presentan el comportamiento `regular' y los consideramos como atípicos o `anómalos'.
+                En la Figura \ref{fig:dispersion_InscritosParticipantes} se muestra la dispersión de $(\mathcal{I}_s,\mathcal{A}_s)$ para $s\in\mathcal{S}$, es decir, los pares inscritos-participantes obtenidos a partir de \textit{MeetingsCleanInfo}. La región sombreada representa la región de pares inscritos-participantes que tiene un comportamiento `regular', es decir, que $\mathcal{I}_s\geq \mathcal{A}_s$ (ya que no es posible que alguien asista sin estar previamente inscrito, en teoría). En base a ello, sólo se contabilizan $10$ pares que no presentan el comportamiento `regular' y los consideramos como atípicos o `anómalos'.
 
-                Por otro lado, dado que la correlación lineal entre $I$ y $A$ es bastante alta, podemos usar la regresión lineal para obtener una aproximación de la distribución de $A$ dado $I$. En la Figura \ref{fig:dispersion_InscritosParticipantes} se muestra la recta de regresión lineal en base a los datos obtenidos y aparece en forma de línea punteada. Sin embargo, como este gráfico fue elaborado en \textsc{Power BI}, este no se muestra con una ecuación explícita pero podemos encontrarla utilizando las librerías existentes en \textsc{Python}.
+                Por otro lado, dado que la correlación lineal entre $\mathcal{I}$ y $\mathcal{A}$ es bastante alta, podemos usar la regresión lineal (bajo el modelo $\mathcal{A}\approx\beta\mathcal{I}+\alpha+\varepsilon$) para obtener una aproximación de la distribución de $\mathcal{A}$ dado $\mathcal{I}$. En la Figura \ref{fig:dispersion_InscritosParticipantes} se muestra la recta de regresión lineal en base a los datos obtenidos y aparece en forma de línea punteada. Sin embargo, como este gráfico fue elaborado en \textsc{Power BI}, este no se muestra con una ecuación explícita pero podemos encontrarla utilizando las librerías existentes en \textsc{Python}.
 
                 Vamos a centrarnos en la ecuación de la recta de regresión lineal obtenida en la Figura \ref{fig:linearregression_InscritosParticipantes}. Entonces para $x\in\Real^+\cap\Integer$ representando el número de alumnos inscritos en una sesión (que es conocido antes de una sesión) tendríamos que $y=0.69x-0.643$, con un redondeo adecuado, representaría el número estimado de asistentes en la sesión.
 
                 Si bien esto muestra el comportamiento global del par inscritos-participantes se desconoce el comportamiento según el curso.
 
-                Por otro lado, si trabajamos en base al supuesto $A\approx0.69I-0.643+\varepsilon_I$ con $\varepsilon_I\sim\mathcal{N}(0,\sigma_I^2)$ entonces
+                Por otro lado, si trabajamos en base al supuesto $\mathcal{A}\approx0.69\mathcal{I}-0.643+\varepsilon_\mathcal{I}$ con $\varepsilon_\mathcal{I}\sim\mathcal{N}(0,\sigma_\mathcal{I}^2)$ entonces
                 \begin{equation*}
-                    \EV{A\mid I=n}\approx 0.69n-0.643
+                    \EV{\mathcal{A}\mid \mathcal{I}=n}\approx 0.69n-0.643
                 \end{equation*}
-                y deberíamos ser capaces de verificar que $A-0.69I+0.643\sim\varepsilon_I\sim\mathcal{N}(0,\sigma_I^2)$ mediante el contraste de hipótesis de Saphiro-Wilk (Ejemplo \ref{shapiro wilk}).
- 
-                Por otro lado, al observar las ecuaciones de las rectas de regresión en la Figura \ref{fig:linearregression_InscritosParticipantesCursos} podemos ver que estos comportamientos son bastante similares, principalemente en el sentido de la pendiente. Si promediamos las pendientes $\beta_i$ de las rectas obtenidas por curso obtenemos
+                y deberíamos ser capaces de verificar que $\mathcal{A}-0.69\mathcal{I}+0.643\sim\varepsilon_I\sim\mathcal{N}(0,\sigma_\mathcal{I}^2)$ mediante el contraste de hipótesis de Shapiro-Wilk (Ejemplo \ref{shapiro wilk}). De hecho, realizando el procedimiento de contraste de hipótesis de Shapiro-Wilk sobre $\varepsilon_{\mathcal{I}_s}$ para cada $\mathcal{I}_s$.
+
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=0.4\textwidth]{Sources/shapirowilk_InscritosParticipantesErrorPredict.png}
+                    \caption{Contraste de hipótesis de Shapiro-Wilk sobre $\varepsilon_{\mathcal{I}_s}$ para cada $\mathcal{I}_s$ (\textsc{Python})}
+                    \label{fig:shapirowilk_InscritosParticipantesErrorPredict}
+                \end{figure}
+                
+                Recordemos que $H_0: \varepsilon_\mathcal{I}$ es una variable aleatoria normal. En la Figura \ref{fig:shapirowilk_InscritosParticipantesErrorPredict} se muestra que para la mayoría de los $\mathcal{I}_s$, la hipótesis nula es \textbf{aceptada}, por lo que en promedio $\varepsilon_\mathcal{I}$ es una variable aleatoria normal. Además, debemos tener en consideración que $\card{\mathcal{S}}$ no es muy grande como para contar con suficientes datos para cada $\mathcal{I}_s$.
+                
+                % Como aproximamos $\mathcal{A}\approx0.69\mathcal{I}-0.643+\varepsilon_\mathcal{I}$, 
+                % % \begin{equation}
+                % %     \begin{split}
+                % %         \EV{\mathcal{I}}&\approx0.69\EV{\mathcal{A}}-0.643\\
+                % %         \EV{\mathcal{I}\mid C=c}&\approx0.69\EV{\mathcal{A}\mid C=c}-0.643
+                % %     \end{split}
+                % % \end{equation}
+                % \begin{equation}
+                %     \EV{\mathcal{I}}\approx0.69\EV{\mathcal{A}}-0.643
+                % \end{equation}
+                % y podemos verificar ello utilizando las medias calculadas en la Figura \ref{fig:linearregression_InscritosParticipantesCursos}.
+
+                Por otro lado, al observar las ecuaciones de las rectas de regresión en la Figura \ref{fig:linearregression_InscritosParticipantesCursos} (bajo el modelo $\mathcal{A}\approx\beta_i\mathcal{I}+\alpha_i+\varepsilon_\mathcal{I}$ para cada $i\in C$) podemos ver que estos comportamientos son bastante similares, principalemente en el sentido de la pendiente. Si promediamos las pendientes $\beta_i$ de las rectas obtenidas por curso obtenemos
                 \begin{equation*}
-                    \hat{\beta}=\frac{1}{7}\sum_{i=1}^{7}\beta_i=\frac{0.727+0.707+0.710+0.677+0.514+0.696+0.409}{7}=\frac{4.44}{7}\approx0.634
+                    \hat{\beta}=\frac{1}{7}\sum_{i\in C}\beta_i=\frac{0.727+0.707+0.710+0.677+0.514+0.696+0.409}{7}=\frac{4.44}{7}\approx0.634
                 \end{equation*}
                 y el error relativo de la pendiente $\beta$ a $\hat{\beta}$ de la muestra total es $8.07\%$, lo cual es pequeño.
                 Esto podría indicar que, de manera aproximada, existe una independencia entre las variables aleatorias $(\mathcal{I},\mathcal{A})$ y $C$.
+
+                \begin{observacion}
+                    Dado que $\mathcal{I}$ y $\mathcal{A}$ presentan múltiples combinaciones de $n$ y $a$ para evaluar la estimación de $\Prob{\mathcal{I}=n\mid \mathcal{A}=a}$, se descarta mostrar una tabla que muestre explícitamente las aproximaciones. Por lo tanto, nos contentamos con el estudio de la correlación y la normalidad.
+                \end{observacion}
         \section{Duración de las sesiones}
             El motivo de agrupar en intervalos de $8\,\textup{min}$ es porque si buscaramos partir en $9$ subintervalos los intervalos $[0;45]$ y $[0;90]$, los intervalos tendrían longitud $5\,\textup{min}$ y $10\,\textup{min}$ respectivamente, por lo que para evitar el tener que utilizar intervalos de longitud diferentes se toman intervalos que resulten del promedio aproximado de los mismos que es $7.5\,\textup{min}\approx8\,\textup{min}$.
 
-            En el comportamiento global de esta variable podría no ser apreciable algún comportamiento en particular.
-
-            Sin embargo, como ya se ha mencionado, según el tipo de sesión la duración máxima establecida de la misma es diferente. Es decir, $90\,\textup{min}$ para los talleres y $45\,\textup{min}$ para las tutorías. Por lo tanto, se espera que la mayor parte de los valores registrados en la columna \textbf{Duración (minutos)} estén mayoritariamente concentrados en $90$ y $45$ para los talleres y tutorías, respectivamente.
-        
-        \section{Puntualidad}
-            Dado que el reglamento de la \textit{Universidad Tecnológica del Perú} indica que, tanto para talleres como para tutorías, la hora de ingreso a la sesión debe ser entre $5$ y $10$ minutos antes de la hora programada, entonces se esperaría que los valores registrados en la columna \textbf{Puntualidad (minutos)} se encuentren mayoritariamente concentrados en el intervalo $\mathopen[5;10\mathclose]$.
+            En el comportamiento global de esta variable podría no ser apreciable algún comportamiento en particular. Sin embargo, como ya se ha mencionado, según el tipo de sesión la duración máxima establecida es:  $90\,\textup{min}$ para los talleres y $45\,\textup{min}$ para las tutorías. Por lo tanto, se espera que la mayor parte de los valores registrados en la columna \textbf{Duración (minutos)} estén mayoritariamente concentrados en $90$ y $45$ para los talleres y tutorías, respectivamente.
             
+            Lo que es apreciable es que en talleres la duración de las sesiones suele ser la máxima establecida ($90\,\textup{min}$), mientras que en tutorías suele ser la mitad de su máxima establecida ($22.5\,\textup{min}$). Esto es debido a que la permanencia del tutor a cargo (mi persona) es hasta un máximo aproximado de la mitad del tiempo cuando no ingresan estudiantes a la sesión, por lo que esto también indicaría que las sesiones de tutorías son las que menos se dictan en comparación con los talleres.
+        \section{Puntualidad}
+            Dado que el reglamento de la \textit{Universidad Tecnológica del Perú} indica que, tanto para talleres como para tutorías, la hora de ingreso a la sesión debe ser entre $5$ y $10$ minutos antes de la hora programada, entonces se esperaría que los valores registrados en la columna \textbf{Puntualidad (minutos)} se encuentren mayoritariamente concentrados en el intervalo $\mathopen[5;10\mathclose]$.            
             \begin{figure}[H]
                 \centering
-                \includegraphics[width=0.7\textwidth]{Sources/histogram_Puntualidad.png}
-                \caption{Histograma de la puntualidad (\textsc{Python})..}
+                \includegraphics[width=0.6\textwidth]{Sources/histogram_Puntualidad.png}
+                \caption{Histograma de la puntualidad (\textsc{Python}).}
                 \label{fig:histogram_Puntualidad}
             \end{figure}
-
             La Figura \ref{fig:histogram_Puntualidad} muestra un histograma de la variable aleatoria \textbf{Puntualidad} con curvas que estiman la distribución. En la línea en rojo muestra la función de desnsidad de una variable aleatoria normal con media y desviación estándar de la muestra en \textbf{Puntualidad} (Figura \ref{fig:histograma_PuntualidadGlobal}). Por otro lado, en la linea en celeste muestra la distribución aproximada usando \textit{KDE} (Kernel Density Estimation).
 
             Sin embargo, también debemos tener en cuenta que podrían presentarse valores atípicos, pues como ya se mencionó \textit{Zoom} registra que una sesión ha sido iniciada si es que existe algún integrante en la sesión e independiente de si se trata del anfitrión (mi persona) o no.
@@ -1014,12 +1033,13 @@
             Además, el comportamiento global es muy similar al observado al comportamiento en talleres y tutorías. Esto tiene sentido, pues, debido a que la puntualidad es indistinta al tipo de sesión.
     
     \chapter{Conclusiones}
-        Distribución del número de inscritos (Por curso y global: el número global es la suma de los números por curso (variables aleatorias))
         \begin{enumerate}
-            \item La distribución de la duración de las sesiones es muy diferente en talleres y tutorías.
-            \item La distribución de la puntualidad de las sesiones es muy diferente en talleres y tutorías.
-            \item La distribución de la cantidad de inscritos es muy diferente en talleres y tutorías.
+            \item Se asignan equitativamente sesiones de tutoría y taller.
+            \item La cantidad de inscritos y participantes en talleres es mayor a la cantidad de inscritos y participantes en tutorías.
             \item El número de asistentes presenta una correlación lineal positiva fuerte con el número de inscritos.
+            \item Se espera que de una cantidad de alumnos inscritos en cualquier tipo o curso, aproximadamente el $70\%$ de ellos asistan a la misma.
+            \item La duración de las sesiones en talleres suele ser la máxima establecida, mientras que en las tutorías suele ser la media.
+            \item La puntualidad mantiene su distribución aproximadamente igual en talleres y tutorías.
         \end{enumerate}
     \chapter{Anexos}
         \section{Miscelánea}
@@ -1210,7 +1230,12 @@
                 \begin{equation*}
                     \kappa(X) := \EV{\frac{(X-\mu)^4}{\sigma^4}}=\frac{\EV{(X-\mu)^4}}{\EV{(X-\mu)^2}^2}
                 \end{equation*}
-                Además, el exceso de kurtosis de $X$ se define como $\kappa_e(X) = \kappa(X)-3$.
+                Además, el exceso de kurtosis de $X$ se define como $\kappa_e(X) = \kappa(X)-3$ y
+                \begin{itemize}
+                    \item Si $\kappa_e(X) > 0$, entonces $X$ tiene una distribución \textbf{mesokúrtica}.
+                    \item Si $\kappa_e(X) < 0$, entonces $X$ tiene una distribución \textbf{platikúrtica}.
+                    \item Si $\kappa_e(X) = 0$, entonces $X$ tiene una distribución \textbf{mesokúrtica}.
+                \end{itemize}
             \end{definicion}
             \begin{definicion}[Coeficiente de correlación (Pearson)]
                 Sea $X$ y $Y$ dos variables aleatorias. Entonces el coeficiente de correlación de Pearson entre $X$ y $Y$ se define como

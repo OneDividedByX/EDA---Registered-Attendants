@@ -62,16 +62,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.3}Inscritos-Participantes}{42}{subsection.5.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Duración de las sesiones}{43}{section.5.4}%
+\contentsline {section}{\numberline {5.4}Duración de las sesiones}{44}{section.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Puntualidad}{43}{section.5.5}%
+\contentsline {section}{\numberline {5.5}Puntualidad}{44}{section.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusiones}{45}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{47}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Anexos}{47}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Anexos}{49}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Miscelánea}{47}{section.7.1}%
+\contentsline {section}{\numberline {7.1}Miscelánea}{49}{section.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Probabilidad}{47}{section.7.2}%
+\contentsline {section}{\numberline {7.2}Probabilidad}{49}{section.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Métricas estadísticas}{48}{section.7.3}%
+\contentsline {section}{\numberline {7.3}Métricas estadísticas}{50}{section.7.3}%

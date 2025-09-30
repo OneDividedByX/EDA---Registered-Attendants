@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.10)  29 SEP 2025 13:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.10)  29 SEP 2025 21:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1301,43 +1301,43 @@ LaTeX Info: Redefining \% on input line 343.
 ]
 Cap\'{\i }tulo 1.
 [9]
-LaTeX Info: Redefining \. on input line 359.
-LaTeX Info: Redefining \% on input line 359.
+LaTeX Info: Redefining \. on input line 360.
+LaTeX Info: Redefining \% on input line 360.
  [10
 
 ]
 Cap\'{\i }tulo 2.
 [11]
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 415.
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 416.
  (c:/texlive/2021/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
-LaTeX Info: Redefining \. on input line 439.
-LaTeX Info: Redefining \% on input line 439.
+LaTeX Info: Redefining \. on input line 440.
+LaTeX Info: Redefining \% on input line 440.
  [12]
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 442.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 443.
  (c:/texlive/2021/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Info: Redefining \. on input line 475.
-LaTeX Info: Redefining \% on input line 475.
+LaTeX Info: Redefining \. on input line 476.
+LaTeX Info: Redefining \% on input line 476.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 475.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 476.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [13]
-LaTeX Info: Redefining \. on input line 508.
-LaTeX Info: Redefining \% on input line 508.
+LaTeX Info: Redefining \. on input line 509.
+LaTeX Info: Redefining \% on input line 509.
  [14]
-LaTeX Info: Redefining \. on input line 537.
-LaTeX Info: Redefining \% on input line 537.
+LaTeX Info: Redefining \. on input line 538.
+LaTeX Info: Redefining \% on input line 538.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 537.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 538.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [15]
-LaTeX Info: Redefining \. on input line 537.
-LaTeX Info: Redefining \% on input line 537.
+LaTeX Info: Redefining \. on input line 538.
+LaTeX Info: Redefining \% on input line 538.
  [16
 
 ]
@@ -1346,64 +1346,64 @@ Cap\'{\i }tulo 3.
 <Sources/zoomReport.png, id=352, 764.10469pt x 573.64313pt>
 File: Sources/zoomReport.png Graphic file (type png)
 <use Sources/zoomReport.png>
-Package pdftex.def Info: Sources/zoomReport.png  used on input line 550.
+Package pdftex.def Info: Sources/zoomReport.png  used on input line 551.
 (pdftex.def)             Requested size: 318.66948pt x 239.23912pt.
-LaTeX Info: Redefining \. on input line 559.
-LaTeX Info: Redefining \% on input line 559.
+LaTeX Info: Redefining \. on input line 560.
+LaTeX Info: Redefining \% on input line 560.
  [18 <./Sources/zoomReport.png>]
 <Sources/registrationMeetings_Head.png, id=366, 764.10469pt x 298.86656pt>
 File: Sources/registrationMeetings_Head.png Graphic file (type png)
 <use Sources/registrationMeetings_Head.png>
-Package pdftex.def Info: Sources/registrationMeetings_Head.png  used on input line 567.
+Package pdftex.def Info: Sources/registrationMeetings_Head.png  used on input line 568.
 (pdftex.def)             Requested size: 455.24411pt x 178.06265pt.
 <Sources/usermeetings_Head.png, id=367, 1179.65718pt x 298.11375pt>
 File: Sources/usermeetings_Head.png Graphic file (type png)
 <use Sources/usermeetings_Head.png>
-Package pdftex.def Info: Sources/usermeetings_Head.png  used on input line 573.
+Package pdftex.def Info: Sources/usermeetings_Head.png  used on input line 574.
 (pdftex.def)             Requested size: 455.24411pt x 115.0448pt.
 <Sources/SQL-left-join-example.png, id=368, 419.5675pt x 286.06876pt>
 File: Sources/SQL-left-join-example.png Graphic file (type png)
 <use Sources/SQL-left-join-example.png>
-Package pdftex.def Info: Sources/SQL-left-join-example.png  used on input line 582.
+Package pdftex.def Info: Sources/SQL-left-join-example.png  used on input line 583.
 (pdftex.def)             Requested size: 182.09486pt x 124.15517pt.
-LaTeX Info: Redefining \. on input line 585.
-LaTeX Info: Redefining \% on input line 585.
+LaTeX Info: Redefining \. on input line 586.
+LaTeX Info: Redefining \% on input line 586.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 585.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 586.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [19 <./Sources/registrationMeetings_Head.png> <./Sources/usermeetings_Head.png>]
 <Sources/Meetings_Head.png, id=375, 883.80188pt x 250.68657pt>
 File: Sources/Meetings_Head.png Graphic file (type png)
 <use Sources/Meetings_Head.png>
-Package pdftex.def Info: Sources/Meetings_Head.png  used on input line 590.
+Package pdftex.def Info: Sources/Meetings_Head.png  used on input line 591.
 (pdftex.def)             Requested size: 455.24411pt x 129.12988pt.
-LaTeX Info: Redefining \. on input line 602.
-LaTeX Info: Redefining \% on input line 602.
+LaTeX Info: Redefining \. on input line 603.
+LaTeX Info: Redefining \% on input line 603.
  [20 <./Sources/SQL-left-join-example.png (PNG copy)> <./Sources/Meetings_Head.png>]
 <Sources/MeetingsClean_Head.png, id=384, 1346.78156pt x 456.20438pt>
 File: Sources/MeetingsClean_Head.png Graphic file (type png)
 <use Sources/MeetingsClean_Head.png>
-Package pdftex.def Info: Sources/MeetingsClean_Head.png  used on input line 613.
+Package pdftex.def Info: Sources/MeetingsClean_Head.png  used on input line 614.
 (pdftex.def)             Requested size: 455.24411pt x 154.20944pt.
 <Sources/MeetingsCleanInfo_Head.png, id=385, 1411.52344pt x 630.10406pt>
 File: Sources/MeetingsCleanInfo_Head.png Graphic file (type png)
 <use Sources/MeetingsCleanInfo_Head.png>
-Package pdftex.def Info: Sources/MeetingsCleanInfo_Head.png  used on input line 622.
+Package pdftex.def Info: Sources/MeetingsCleanInfo_Head.png  used on input line 623.
 (pdftex.def)             Requested size: 455.24411pt x 203.22383pt.
-LaTeX Info: Redefining \. on input line 626.
-LaTeX Info: Redefining \% on input line 626.
+LaTeX Info: Redefining \. on input line 627.
+LaTeX Info: Redefining \% on input line 627.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 626.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 627.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [21 <./Sources/MeetingsClean_Head.png>]
-Underfull \hbox (badness 6173) in paragraph at lines 656--657
+Underfull \hbox (badness 6173) in paragraph at lines 657--658
 []\T1/cmr/m/n/9 Estad�stica Des-
  []
 
-LaTeX Info: Redefining \. on input line 663.
-LaTeX Info: Redefining \% on input line 663.
+LaTeX Info: Redefining \. on input line 664.
+LaTeX Info: Redefining \% on input line 664.
 [22 <./Sources/MeetingsCleanInfo_Head.png>]
 Cap\'{\i }tulo 4.
 [23
@@ -1412,311 +1412,329 @@ Cap\'{\i }tulo 4.
 <Sources/histograma_TipoGlobal.png, id=424, 978.65625pt x 549.55313pt>
 File: Sources/histograma_TipoGlobal.png Graphic file (type png)
 <use Sources/histograma_TipoGlobal.png>
-Package pdftex.def Info: Sources/histograma_TipoGlobal.png  used on input line 674.
+Package pdftex.def Info: Sources/histograma_TipoGlobal.png  used on input line 675.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
 <Sources/histograma_TipoCurso.png, id=425, 978.65625pt x 549.55313pt>
 File: Sources/histograma_TipoCurso.png Graphic file (type png)
 <use Sources/histograma_TipoCurso.png>
-Package pdftex.def Info: Sources/histograma_TipoCurso.png  used on input line 681.
+Package pdftex.def Info: Sources/histograma_TipoCurso.png  used on input line 682.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
 <Sources/histograma_CursosGlobal.png, id=426, 978.65625pt x 549.55313pt>
 File: Sources/histograma_CursosGlobal.png Graphic file (type png)
 <use Sources/histograma_CursosGlobal.png>
-Package pdftex.def Info: Sources/histograma_CursosGlobal.png  used on input line 690.
+Package pdftex.def Info: Sources/histograma_CursosGlobal.png  used on input line 691.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
-LaTeX Info: Redefining \. on input line 694.
-LaTeX Info: Redefining \% on input line 694.
+LaTeX Info: Redefining \. on input line 695.
+LaTeX Info: Redefining \% on input line 695.
  [24 <./Sources/histograma_TipoGlobal.png> <./Sources/histograma_TipoCurso.png>]
 <Sources/histograma_CursosTaller.png, id=434, 978.65625pt x 549.55313pt>
 File: Sources/histograma_CursosTaller.png Graphic file (type png)
 <use Sources/histograma_CursosTaller.png>
-Package pdftex.def Info: Sources/histograma_CursosTaller.png  used on input line 697.
+Package pdftex.def Info: Sources/histograma_CursosTaller.png  used on input line 698.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
 <Sources/histograma_CursosTutoría.png, id=435, 978.65625pt x 549.55313pt>
 File: Sources/histograma_CursosTutoría.png Graphic file (type png)
 <use Sources/histograma_CursosTutoría.png>
-Package pdftex.def Info: Sources/histograma_CursosTutoría.png  used on input line 703.
+Package pdftex.def Info: Sources/histograma_CursosTutoría.png  used on input line 704.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
-LaTeX Info: Redefining \. on input line 707.
-LaTeX Info: Redefining \% on input line 707.
+LaTeX Info: Redefining \. on input line 708.
+LaTeX Info: Redefining \% on input line 708.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 707.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 708.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [25 <./Sources/histograma_CursosGlobal.png> <./Sources/histograma_CursosTaller.png>]
-LaTeX Info: Redefining \. on input line 707.
-LaTeX Info: Redefining \% on input line 707.
+LaTeX Info: Redefining \. on input line 708.
+LaTeX Info: Redefining \% on input line 708.
  [26 <./Sources/histograma_CursosTutoría.png>]
 <Sources/histograma_InscritosGlobal.png, id=449, 978.65625pt x 549.55313pt>
 File: Sources/histograma_InscritosGlobal.png Graphic file (type png)
 <use Sources/histograma_InscritosGlobal.png>
-Package pdftex.def Info: Sources/histograma_InscritosGlobal.png  used on input line 719.
+Package pdftex.def Info: Sources/histograma_InscritosGlobal.png  used on input line 720.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
-LaTeX Info: Redefining \. on input line 723.
-LaTeX Info: Redefining \% on input line 723.
+LaTeX Info: Redefining \. on input line 724.
+LaTeX Info: Redefining \% on input line 724.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 723.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 724.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [27 <./Sources/histograma_InscritosGlobal.png>]
 <Sources/histograma_InscritosTaller.png, id=457, 978.65625pt x 549.55313pt>
 File: Sources/histograma_InscritosTaller.png Graphic file (type png)
 <use Sources/histograma_InscritosTaller.png>
-Package pdftex.def Info: Sources/histograma_InscritosTaller.png  used on input line 726.
+Package pdftex.def Info: Sources/histograma_InscritosTaller.png  used on input line 727.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
 <Sources/histograma_InscritosTutoría.png, id=458, 978.65625pt x 549.55313pt>
 File: Sources/histograma_InscritosTutoría.png Graphic file (type png)
 <use Sources/histograma_InscritosTutoría.png>
-Package pdftex.def Info: Sources/histograma_InscritosTutoría.png  used on input line 732.
+Package pdftex.def Info: Sources/histograma_InscritosTutoría.png  used on input line 733.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
-LaTeX Info: Redefining \. on input line 736.
-LaTeX Info: Redefining \% on input line 736.
+LaTeX Info: Redefining \. on input line 737.
+LaTeX Info: Redefining \% on input line 737.
  [28 <./Sources/histograma_InscritosTaller.png> <./Sources/histograma_InscritosTutoría.png>]
 <Sources/histograma_ParticipantesGlobal.png, id=466, 978.65625pt x 549.55313pt>
 File: Sources/histograma_ParticipantesGlobal.png Graphic file (type png)
 <use Sources/histograma_ParticipantesGlobal.png>
-Package pdftex.def Info: Sources/histograma_ParticipantesGlobal.png  used on input line 746.
+Package pdftex.def Info: Sources/histograma_ParticipantesGlobal.png  used on input line 747.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
-LaTeX Info: Redefining \. on input line 750.
-LaTeX Info: Redefining \% on input line 750.
+LaTeX Info: Redefining \. on input line 751.
+LaTeX Info: Redefining \% on input line 751.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 750.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 751.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [29 <./Sources/histograma_ParticipantesGlobal.png>]
 <Sources/histograma_ParticipantesTaller.png, id=473, 978.65625pt x 549.55313pt>
 File: Sources/histograma_ParticipantesTaller.png Graphic file (type png)
 <use Sources/histograma_ParticipantesTaller.png>
-Package pdftex.def Info: Sources/histograma_ParticipantesTaller.png  used on input line 753.
+Package pdftex.def Info: Sources/histograma_ParticipantesTaller.png  used on input line 754.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
 <Sources/histograma_ParticipantesTutoría.png, id=474, 978.65625pt x 549.55313pt>
 File: Sources/histograma_ParticipantesTutoría.png Graphic file (type png)
 <use Sources/histograma_ParticipantesTutoría.png>
-Package pdftex.def Info: Sources/histograma_ParticipantesTutoría.png  used on input line 759.
+Package pdftex.def Info: Sources/histograma_ParticipantesTutoría.png  used on input line 760.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
 <Sources/dispersion_InscritosParticipantes.png, id=475, 978.65625pt x 549.55313pt>
 File: Sources/dispersion_InscritosParticipantes.png Graphic file (type png)
 <use Sources/dispersion_InscritosParticipantes.png>
-Package pdftex.def Info: Sources/dispersion_InscritosParticipantes.png  used on input line 767.
+Package pdftex.def Info: Sources/dispersion_InscritosParticipantes.png  used on input line 768.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 770.
-LaTeX Info: Redefining \% on input line 770.
+LaTeX Info: Redefining \. on input line 771.
+LaTeX Info: Redefining \% on input line 771.
  [30 <./Sources/histograma_ParticipantesTaller.png> <./Sources/histograma_ParticipantesTutoría.png>]
-<Sources/linearregression_InscritosParticipantes.png, id=483, 398.9304pt x 298.4751pt>
+<Sources/linearregression_InscritosParticipantes.png, id=483, 412.6617pt x 312.2064pt>
 File: Sources/linearregression_InscritosParticipantes.png Graphic file (type png)
 <use Sources/linearregression_InscritosParticipantes.png>
-Package pdftex.def Info: Sources/linearregression_InscritosParticipantes.png  used on input line 773.
-(pdftex.def)             Requested size: 273.14923pt x 204.37679pt.
+Package pdftex.def Info: Sources/linearregression_InscritosParticipantes.png  used on input line 774.
+(pdftex.def)             Requested size: 273.14923pt x 206.6571pt.
 <Sources/linearregression_InscritosParticipantesMatemáticaI.png, id=484, 412.6617pt x 327.3831pt>
 File: Sources/linearregression_InscritosParticipantesMatemáticaI.png Graphic file (type png)
 <use Sources/linearregression_InscritosParticipantesMatemáticaI.png>
-Package pdftex.def Info: Sources/linearregression_InscritosParticipantesMatemáticaI.png  used on input line 779.
+Package pdftex.def Info: Sources/linearregression_InscritosParticipantesMatemáticaI.png  used on input line 780.
 (pdftex.def)             Requested size: 186.65175pt x 148.08034pt.
 <Sources/linearregression_InscritosParticipantesMatemáticaII.png, id=485, 406.8801pt x 327.3831pt>
 File: Sources/linearregression_InscritosParticipantesMatemáticaII.png Graphic file (type png)
 <use Sources/linearregression_InscritosParticipantesMatemáticaII.png>
-Package pdftex.def Info: Sources/linearregression_InscritosParticipantesMatemáticaII.png  used on input line 780.
+Package pdftex.def Info: Sources/linearregression_InscritosParticipantesMatemáticaII.png  used on input line 781.
 (pdftex.def)             Requested size: 186.65175pt x 150.18343pt.
 <Sources/linearregression_InscritosParticipantesCálculoI.png, id=486, 406.8801pt x 327.3831pt>
 File: Sources/linearregression_InscritosParticipantesCálculoI.png Graphic file (type png)
 <use Sources/linearregression_InscritosParticipantesCálculoI.png>
-Package pdftex.def Info: Sources/linearregression_InscritosParticipantesCálculoI.png  used on input line 782.
+Package pdftex.def Info: Sources/linearregression_InscritosParticipantesCálculoI.png  used on input line 783.
 (pdftex.def)             Requested size: 186.65175pt x 150.18343pt.
 <Sources/linearregression_InscritosParticipantesCálculoII.png, id=487, 406.8801pt x 327.3831pt>
 File: Sources/linearregression_InscritosParticipantesCálculoII.png Graphic file (type png)
 <use Sources/linearregression_InscritosParticipantesCálculoII.png>
-Package pdftex.def Info: Sources/linearregression_InscritosParticipantesCálculoII.png  used on input line 783.
+Package pdftex.def Info: Sources/linearregression_InscritosParticipantesCálculoII.png  used on input line 784.
 (pdftex.def)             Requested size: 186.65175pt x 150.18343pt.
 <Sources/linearregression_InscritosParticipantesEstadistica.png, id=488, 406.8801pt x 327.3831pt>
 File: Sources/linearregression_InscritosParticipantesEstadistica.png Graphic file (type png)
 <use Sources/linearregression_InscritosParticipantesEstadistica.png>
-Package pdftex.def Info: Sources/linearregression_InscritosParticipantesEstadistica.png  used on input line 785.
+Package pdftex.def Info: Sources/linearregression_InscritosParticipantesEstadistica.png  used on input line 786.
 (pdftex.def)             Requested size: 186.65175pt x 150.18343pt.
 <Sources/linearregression_InscritosParticipantesGeometria.png, id=489, 406.8801pt x 327.3831pt>
 File: Sources/linearregression_InscritosParticipantesGeometria.png Graphic file (type png)
 <use Sources/linearregression_InscritosParticipantesGeometria.png>
-Package pdftex.def Info: Sources/linearregression_InscritosParticipantesGeometria.png  used on input line 786.
+Package pdftex.def Info: Sources/linearregression_InscritosParticipantesGeometria.png  used on input line 787.
 (pdftex.def)             Requested size: 186.65175pt x 150.18343pt.
 <Sources/linearregression_InscritosParticipantesMatemáticaMed.png, id=490, 409.7709pt x 327.3831pt>
 File: Sources/linearregression_InscritosParticipantesMatemáticaMed.png Graphic file (type png)
 <use Sources/linearregression_InscritosParticipantesMatemáticaMed.png>
-Package pdftex.def Info: Sources/linearregression_InscritosParticipantesMatemáticaMed.png  used on input line 788.
+Package pdftex.def Info: Sources/linearregression_InscritosParticipantesMatemáticaMed.png  used on input line 789.
 (pdftex.def)             Requested size: 186.65175pt x 149.12439pt.
-LaTeX Info: Redefining \. on input line 792.
-LaTeX Info: Redefining \% on input line 792.
+LaTeX Info: Redefining \. on input line 793.
+LaTeX Info: Redefining \% on input line 793.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 792.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 793.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [31 <./Sources/dispersion_InscritosParticipantes.png> <./Sources/linearregression_InscritosParticipantes.png>]
 Overfull \vbox (6.60925pt too high) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 792.
-LaTeX Info: Redefining \% on input line 792.
+LaTeX Info: Redefining \. on input line 793.
+LaTeX Info: Redefining \% on input line 793.
  [32 <./Sources/linearregression_InscritosParticipantesMatemáticaI.png> <./Sources/linearregression_InscritosParticipantesMatemáticaII.png> <./Sources/linearregression_InscritosParticipantesCálculoI.png> <./Sources/linearregression_InscritosParticipantesCálculoII.png> <./Sources/linearregression_InscritosParticipantesEstadistica.png> <./Sources/linearregression_InscritosParticipantesGeometria.png> <./Sources/linearregression_InscritosParticipantesMatemáticaMed.png>]
 <Sources/histograma_DuracionGlobal.png, id=510, 978.65625pt x 549.55313pt>
 File: Sources/histograma_DuracionGlobal.png Graphic file (type png)
 <use Sources/histograma_DuracionGlobal.png>
-Package pdftex.def Info: Sources/histograma_DuracionGlobal.png  used on input line 810.
+Package pdftex.def Info: Sources/histograma_DuracionGlobal.png  used on input line 811.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
 <Sources/histograma_DuracionTaller.png, id=511, 978.65625pt x 549.55313pt>
 File: Sources/histograma_DuracionTaller.png Graphic file (type png)
 <use Sources/histograma_DuracionTaller.png>
-Package pdftex.def Info: Sources/histograma_DuracionTaller.png  used on input line 817.
+Package pdftex.def Info: Sources/histograma_DuracionTaller.png  used on input line 818.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
 <Sources/histograma_DuracionTutoria.png, id=512, 978.65625pt x 549.55313pt>
 File: Sources/histograma_DuracionTutoria.png Graphic file (type png)
 <use Sources/histograma_DuracionTutoria.png>
-Package pdftex.def Info: Sources/histograma_DuracionTutoria.png  used on input line 823.
+Package pdftex.def Info: Sources/histograma_DuracionTutoria.png  used on input line 824.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
 
 Underfull \vbox (badness 4569) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 826.
-LaTeX Info: Redefining \% on input line 826.
+LaTeX Info: Redefining \. on input line 827.
+LaTeX Info: Redefining \% on input line 827.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 826.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 827.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [33 <./Sources/histograma_DuracionGlobal.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 830.
-LaTeX Info: Redefining \% on input line 830.
+LaTeX Info: Redefining \. on input line 831.
+LaTeX Info: Redefining \% on input line 831.
  [34 <./Sources/histograma_DuracionTaller.png> <./Sources/histograma_DuracionTutoria.png>]
 <Sources/histograma_PuntualidadGlobal.png, id=524, 978.65625pt x 549.55313pt>
 File: Sources/histograma_PuntualidadGlobal.png Graphic file (type png)
 <use Sources/histograma_PuntualidadGlobal.png>
-Package pdftex.def Info: Sources/histograma_PuntualidadGlobal.png  used on input line 842.
+Package pdftex.def Info: Sources/histograma_PuntualidadGlobal.png  used on input line 843.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
 <Sources/histograma_PuntualidadTaller.png, id=525, 978.65625pt x 549.55313pt>
 File: Sources/histograma_PuntualidadTaller.png Graphic file (type png)
 <use Sources/histograma_PuntualidadTaller.png>
-Package pdftex.def Info: Sources/histograma_PuntualidadTaller.png  used on input line 848.
+Package pdftex.def Info: Sources/histograma_PuntualidadTaller.png  used on input line 849.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
 <Sources/histograma_PuntualidadTutoria.png, id=526, 978.65625pt x 549.55313pt>
 File: Sources/histograma_PuntualidadTutoria.png Graphic file (type png)
 <use Sources/histograma_PuntualidadTutoria.png>
-Package pdftex.def Info: Sources/histograma_PuntualidadTutoria.png  used on input line 854.
+Package pdftex.def Info: Sources/histograma_PuntualidadTutoria.png  used on input line 855.
 (pdftex.def)             Requested size: 455.24411pt x 255.64018pt.
 
 Underfull \vbox (badness 8019) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 857.
-LaTeX Info: Redefining \% on input line 857.
+LaTeX Info: Redefining \. on input line 858.
+LaTeX Info: Redefining \% on input line 858.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 857.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 858.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [35 <./Sources/histograma_PuntualidadGlobal.png>]
 <Sources/pairplot_NumericalData.png, id=532, 712.5822pt x 712.5822pt>
 File: Sources/pairplot_NumericalData.png Graphic file (type png)
 <use Sources/pairplot_NumericalData.png>
-Package pdftex.def Info: Sources/pairplot_NumericalData.png  used on input line 862.
+Package pdftex.def Info: Sources/pairplot_NumericalData.png  used on input line 863.
 (pdftex.def)             Requested size: 455.24411pt x 455.24644pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 865.
-LaTeX Info: Redefining \% on input line 865.
- [36 <./Sources/histograma_PuntualidadTaller.png> <./Sources/histograma_PuntualidadTutoria.png>]
 LaTeX Info: Redefining \. on input line 866.
 LaTeX Info: Redefining \% on input line 866.
+ [36 <./Sources/histograma_PuntualidadTaller.png> <./Sources/histograma_PuntualidadTutoria.png>]
+LaTeX Info: Redefining \. on input line 867.
+LaTeX Info: Redefining \% on input line 867.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 866.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 867.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [37 <./Sources/pairplot_NumericalData.png>]
-LaTeX Info: Redefining \. on input line 866.
-LaTeX Info: Redefining \% on input line 866.
+LaTeX Info: Redefining \. on input line 867.
+LaTeX Info: Redefining \% on input line 867.
  [38
 
 ]
 Cap\'{\i }tulo 5.
 [39]
-LaTeX Info: Redefining \. on input line 947.
-LaTeX Info: Redefining \% on input line 947.
+LaTeX Info: Redefining \. on input line 948.
+LaTeX Info: Redefining \% on input line 948.
  [40]
-LaTeX Info: Redefining \. on input line 959.
-LaTeX Info: Redefining \% on input line 959.
+LaTeX Info: Redefining \. on input line 958.
+LaTeX Info: Redefining \% on input line 958.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 959.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 958.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
  [41]
 <Sources/corrmatrix_NumericalFeatures.png, id=583, 606.76688pt x 105.39375pt>
 File: Sources/corrmatrix_NumericalFeatures.png Graphic file (type png)
 <use Sources/corrmatrix_NumericalFeatures.png>
-Package pdftex.def Info: Sources/corrmatrix_NumericalFeatures.png  used on input line 963.
+Package pdftex.def Info: Sources/corrmatrix_NumericalFeatures.png  used on input line 962.
 (pdftex.def)             Requested size: 318.66948pt x 55.35184pt.
-LaTeX Info: Redefining \. on input line 978.
-LaTeX Info: Redefining \% on input line 978.
+LaTeX Info: Redefining \. on input line 976.
+LaTeX Info: Redefining \% on input line 976.
  [42 <./Sources/corrmatrix_NumericalFeatures.png>]
-LaTeX Info: Redefining \. on input line 1000.
-LaTeX Info: Redefining \% on input line 1000.
+<Sources/shapirowilk_InscritosParticipantesErrorPredict.png, id=594, 276.28218pt x 297.36093pt>
+File: Sources/shapirowilk_InscritosParticipantesErrorPredict.png Graphic file (type png)
+<use Sources/shapirowilk_InscritosParticipantesErrorPredict.png>
+Package pdftex.def Info: Sources/shapirowilk_InscritosParticipantesErrorPredict.png  used on input line 984.
+(pdftex.def)             Requested size: 182.09486pt x 195.98657pt.
+LaTeX Info: Redefining \. on input line 1012.
+LaTeX Info: Redefining \% on input line 1012.
 File: bg/Uni-logo_transparente.png Graphic file (type png)
 <use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1000.
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1012.
 (pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
- [43]
-<Sources/histogram_Puntualidad.png, id=601, 409.7709pt x 327.3831pt>
+ [43 <./Sources/shapirowilk_InscritosParticipantesErrorPredict.png>]
+<Sources/histogram_Puntualidad.png, id=603, 409.7709pt x 327.3831pt>
 File: Sources/histogram_Puntualidad.png Graphic file (type png)
 <use Sources/histogram_Puntualidad.png>
-Package pdftex.def Info: Sources/histogram_Puntualidad.png  used on input line 1003.
-(pdftex.def)             Requested size: 318.66948pt x 254.60846pt.
-LaTeX Info: Redefining \. on input line 1016.
-LaTeX Info: Redefining \% on input line 1016.
- [44 <./Sources/histogram_Puntualidad.png>]
-Cap\'{\i }tulo 6.
-[45
+Package pdftex.def Info: Sources/histogram_Puntualidad.png  used on input line 1023.
+(pdftex.def)             Requested size: 273.14923pt x 218.23654pt.
 
-]
-LaTeX Info: Redefining \. on input line 1024.
-LaTeX Info: Redefining \% on input line 1024.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 1027.
+LaTeX Info: Redefining \% on input line 1027.
+ [44]
+LaTeX Info: Redefining \. on input line 1035.
+LaTeX Info: Redefining \% on input line 1035.
+File: bg/Uni-logo_transparente.png Graphic file (type png)
+<use bg/Uni-logo_transparente.png>
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1035.
+(pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
+ [45 <./Sources/histogram_Puntualidad.png>]
+LaTeX Info: Redefining \. on input line 1035.
+LaTeX Info: Redefining \% on input line 1035.
  [46
 
 ]
-Cap\'{\i }tulo 7.
+Cap\'{\i }tulo 6.
 [47]
-LaTeX Info: Redefining \. on input line 1103.
-LaTeX Info: Redefining \% on input line 1103.
- [48]
-LaTeX Info: Redefining \. on input line 1149.
-LaTeX Info: Redefining \% on input line 1149.
-File: bg/Uni-logo_transparente.png Graphic file (type png)
-<use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1149.
-(pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
- [49]
-LaTeX Info: Redefining \. on input line 1199.
-LaTeX Info: Redefining \% on input line 1199.
- [50]
-LaTeX Info: Redefining \. on input line 1227.
-LaTeX Info: Redefining \% on input line 1227.
-File: bg/Uni-logo_transparente.png Graphic file (type png)
-<use bg/Uni-logo_transparente.png>
-Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1227.
-(pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
- [51]
-LaTeX Info: Redefining \. on input line 1227.
-LaTeX Info: Redefining \% on input line 1227.
- [52
+LaTeX Info: Redefining \. on input line 1044.
+LaTeX Info: Redefining \% on input line 1044.
+ [48
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1227.
+Cap\'{\i }tulo 7.
+[49]
+LaTeX Info: Redefining \. on input line 1123.
+LaTeX Info: Redefining \% on input line 1123.
+ [50]
+LaTeX Info: Redefining \. on input line 1169.
+LaTeX Info: Redefining \% on input line 1169.
+File: bg/Uni-logo_transparente.png Graphic file (type png)
+<use bg/Uni-logo_transparente.png>
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1169.
+(pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
+ [51]
+LaTeX Info: Redefining \. on input line 1219.
+LaTeX Info: Redefining \% on input line 1219.
+ [52]
+LaTeX Info: Redefining \. on input line 1252.
+LaTeX Info: Redefining \% on input line 1252.
+File: bg/Uni-logo_transparente.png Graphic file (type png)
+<use bg/Uni-logo_transparente.png>
+Package pdftex.def Info: bg/Uni-logo_transparente.png  used on input line 1252.
+(pdftex.def)             Requested size: 16.06339pt x 20.1997pt.
+ [53]
+LaTeX Info: Redefining \. on input line 1252.
+LaTeX Info: Redefining \% on input line 1252.
+ [54
+
+]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1252.
  (c:/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 3635) in paragraph at lines 1228--1228
+Underfull \hbox (badness 3635) in paragraph at lines 1253--1253
 \T1/cmtt/m/n/10.95 utstat . toronto . edu / ~brunner / oldclass / appliedf11 / handouts /
  []
 
 
 AED: lastpage setting LastPage
-[53] (./main.aux
+[55] (./main.aux
 LaTeX Info: Redefining \sptext on input line 30.
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
@@ -1731,18 +1749,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40112 strings out of 478599
- 771316 string characters out of 5858101
- 1540263 words of memory out of 5000000
- 56904 multiletter control sequences out of 15000+600000
+ 40126 strings out of 478599
+ 771855 string characters out of 5858101
+ 1540386 words of memory out of 5000000
+ 56911 multiletter control sequences out of 15000+600000
  434498 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  132i,17n,136p,1203b,2271s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (54 pages, 2144282 bytes).
+Output written on main.pdf (56 pages, 2170525 bytes).
 PDF statistics:
- 870 PDF objects out of 1000 (max. 8388607)
- 678 compressed objects within 7 object streams
- 216 named destinations out of 1000 (max. 500000)
- 590 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 888 PDF objects out of 1000 (max. 8388607)
+ 693 compressed objects within 7 object streams
+ 222 named destinations out of 1000 (max. 500000)
+ 595 words of extra memory for PDF output out of 10000 (max. 10000000)
 
