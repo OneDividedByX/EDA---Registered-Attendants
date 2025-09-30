@@ -144,6 +144,33 @@
       \field{year}{1998}
       \true{nocite}
     \endentry
+    \entry{Report:Origin}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=da45354aa6deb57e529452d0b280b8e6}{%
+           family={OneDividedByX},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{da45354aa6deb57e529452d0b280b8e6}
+      \strng{fullhash}{da45354aa6deb57e529452d0b280b8e6}
+      \strng{bibnamehash}{da45354aa6deb57e529452d0b280b8e6}
+      \strng{authorbibnamehash}{da45354aa6deb57e529452d0b280b8e6}
+      \strng{authornamehash}{da45354aa6deb57e529452d0b280b8e6}
+      \strng{authorfullhash}{da45354aa6deb57e529452d0b280b8e6}
+      \field{labelalpha}{One25}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Github Repositories}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://github.com/OneDividedByX/EDA---Registered-Attendants/tree/main/Sources/Data
+      \endverb
+      \verb{url}
+      \verb https://github.com/OneDividedByX/EDA---Registered-Attendants/tree/main/Sources/Data
+      \endverb
+    \endentry
     \entry{cpita:1995}{book}{}
       \name{author}{1}{}{%
         {{hash=c96751d6dbc3d8617d0aee6e7e8d0c2d}{%
